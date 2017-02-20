@@ -5,9 +5,9 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Sliding Top Navigation</title>
+  <title>Accordion Navigation</title>
   <meta name="description" content="">
-  <meta name="author" content="sue" >
+  <meta name="author" content="root" >
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -23,12 +23,15 @@
   <link rel="stylesheet" href="../css/skeleton.css">
     <link rel="stylesheet" href="../css/base.css"> 
    <link rel="stylesheet" href="../css/simple-slideshow-styles.css">
+    <link rel="stylesheet" href="../css/accordion.css">
   
          
  <!-- JavaScript
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- Required for Accordion -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
-  <!-- Faviconc
+  <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="../images/favicon.png">
 
@@ -39,31 +42,32 @@
 <header>
 <div>
 <ul class="top-bar">
-  <li>	<!-- <span class="hamburger" onclick="openTopNav()">&#9776;</span> -->
-   <a href="#slidingTopNav">&#9776;</a> 
+  <li>	<!-- <span class="hamburger" onclick="openSideNav()">&#9776;</span> -->
+     <a class="hamburger" href="#slidingSideNav">&#9776;</a>
   </li>
    <li><a href="../skel-index.html"><img class="home" src="../images/icons/home.svg" alt="Home"></a></li>
   <li><a href="gallery1.html">Gallery 1</a></li>
   <li><a href="gallery2.html">Gallery 2</a></li> 
   <li><a href="gallery3.html">Gallery 3</a></li>
   <li><a href="gallery4.html">Gallery 4</a></li>
-</ul>
 </div>
 </header>
  <!-- sliding side navigation
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<div id="slidingTopNav" class="overlay">
-  
-  <div class="top-overlay-content">
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Clients</a>
-    <a href="#">Contact</a>
-  <!--   <a href="javascript:void(0)" class="topClosebtn" onclick="closeTopNav()">&times;</a> -->
-    <a class="topClosebtn" href="#">&times;</a>
-  
+  <!-- The overlay -->
+ <!-- Overlay content -->
+<div id="slidingSideNav" class="overlay">
+ <!--  <a href="javascript:void(0)" class="sideClosebtn" onclick="closeSideNav()">&times;</a> -->
+   <a class="sideClosebtn" href="#">&times;</a>
+  <div class="side-overlay-content">
+  <!-- ACCORDION
+    ================================================== -->
+	<?php
+	?>
   </div>
 </div>
+  
+
 <header>
 <div class="logo-header">
 			<img class="logo" src="../images/logo.png">
@@ -72,11 +76,12 @@
 			</header>
 		</div><br class="clear">
 <hr>
+
 <!-- Breadcrumbs
     ================================================== -->
     <ul class="breadcrumb">
   <li><a href="../skel-index.html">Home</a></li>
-  <li>Sliding Top Nav</li>
+  <li>Accordion Sliding Side Nav</li>
  </ul>
  <div class="container">
  <div class="main">
@@ -139,6 +144,7 @@
 	<!-- Slideshow js
 ================================================== -->
 <!-- <script src="../js/site.js"></script> -->
+<script src="../js/accordion.js"></script>
 	<script src="../js/hammer.min.js">	</script><!-- for swipe support on touch interfaces -->
 	<script src="../js/better-simple-slideshow.min.js">	</script> 
 	<script>

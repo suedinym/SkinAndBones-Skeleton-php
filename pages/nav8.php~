@@ -5,9 +5,9 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>6 Tab Navigation</title>
+  <title>8 Tab Navigation</title>
   <meta name="description" content="">
-  <meta name="author" content="sue" >
+  <meta name="author" content="root" >
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -56,40 +56,14 @@
 		</div><br class="clear">
 		<!-- Horizontal Navigation
     ================================================== -->
-		<nav>
-			<div class="main-nav">
-				<ul class="nav-horiz-a">
-					<li id="active" class="nav-six">
-						<a href="../skel-index.html">Home</a>
-					</li>
-					<li class="nav-six">
-						<a href="#">Item</a>
-					</li>
-					<li class="nav-six">
-						<a href="#">Item</a>
-					</li>
-				</ul>
-				<ul class="nav-horiz-b">
-						<li class="nav-six">
-						<a href="#">Item</a>
-					</li>
-					<li class="nav-six">
-					<a href="#">Item</a>
-					</li>
-					<li class="nav-six">
-						<a href="#">Item</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-
+	<?php
+	?>
 <!-- Breadcrumbs
     ================================================== -->
     <ul class="breadcrumb">
   <li><a href="../skel-index.html">Home</a></li>
-  <li>Six Tab Horizontal Navigation</li>
+  <li>Eight Tab Horizontal Navigation</li>
  </ul>
-    
  <div class="container">
  <div class="main">
   		<!-- A Better Simple Slideshow Used here

@@ -5,9 +5,9 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>8 Tab Navigation</title>
+  <title>Accordion Navigation</title>
   <meta name="description" content="">
-  <meta name="author" content="sue" >
+  <meta name="author" content="root" >
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -23,10 +23,13 @@
   <link rel="stylesheet" href="../css/skeleton.css">
     <link rel="stylesheet" href="../css/base.css"> 
    <link rel="stylesheet" href="../css/simple-slideshow-styles.css">
+    <link rel="stylesheet" href="../css/accordion.css">
   
          
  <!-- JavaScript
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- Required for Accordion -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -39,60 +42,47 @@
 <header>
 <div>
 <ul class="top-bar">
-  
-  <li><a href="../skel-index.html"><img class="home" src="../images/icons/home.svg" alt="Home"></a></li>
+  <li>	<!-- <span class="hamburger" onclick="openSideNav()">&#9776;</span> -->
+     <a class="hamburger" href="#slidingSideNav">&#9776;</a>
+  </li>
+   <li><a href="../skel-index.html"><img class="home" src="../images/icons/home.svg" alt="Home"></a></li>
   <li><a href="gallery1.html">Gallery 1</a></li>
   <li><a href="gallery2.html">Gallery 2</a></li> 
   <li><a href="gallery3.html">Gallery 3</a></li>
   <li><a href="gallery4.html">Gallery 4</a></li>
-</ul>
 </div>
+</header>
+ <!-- sliding side navigation
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- The overlay -->
+ <!-- Overlay content -->
+<div id="slidingSideNav" class="overlay">
+ <!--  <a href="javascript:void(0)" class="sideClosebtn" onclick="closeSideNav()">&times;</a> -->
+   <a class="sideClosebtn" href="#">&times;</a>
+  <div class="side-overlay-content">
+  <!-- ACCORDION
+    ================================================== -->
+	<?php
+	require '../library/accordion.inc'
+	?>
+  </div>
+</div>
+  
 
+<header>
 <div class="logo-header">
 			<img class="logo" src="../images/logo.png">
 			<h1>Skin and Bones Skeleton</h1>
 					<h5>Based on <a href="http://getskeleton.com"> Skeleton - Version 2.0.4</a></h5>
 			</header>
 		</div><br class="clear">
-		<!-- Horizontal Navigation
-    ================================================== -->
-		<nav>
-			<div class="main-nav">
-				<ul class="nav-horiz-a">
-					<li id="active">
-						<a href="../skel-index.html">Home</a>
-					</li>
-					<li>
-						<a href="#">Item</a>
-					</li>
-					<li>
-						<a href="#">Item</a>
-					</li>
-					<li>
-						<a href="#">Item</a>
-					</li>
-				</ul>
-				<ul class="nav-horiz-b">
-						<li>
-						<a href="#">Item</a>
-					</li>
-					<li>
-						<a href="#">Item</a>
-					</li>
-					<li>
-					<a href="#">Item</a>
-					</li>
-					<li>
-						<a href="#">Item</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
+<hr>
+
 <!-- Breadcrumbs
     ================================================== -->
     <ul class="breadcrumb">
   <li><a href="../skel-index.html">Home</a></li>
-  <li>Eight Tab Horizontal Navigation</li>
+  <li>Accordion Sliding Side Nav</li>
  </ul>
  <div class="container">
  <div class="main">
@@ -154,7 +144,8 @@
 
 	<!-- Slideshow js
 ================================================== -->
-<script src="../js/site.js"></script>
+<!-- <script src="../js/site.js"></script> -->
+<script src="../js/accordion.js"></script>
 	<script src="../js/hammer.min.js">	</script><!-- for swipe support on touch interfaces -->
 	<script src="../js/better-simple-slideshow.min.js">	</script> 
 	<script>

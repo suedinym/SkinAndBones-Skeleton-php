@@ -423,6 +423,12 @@ a.sideClosebtn {
     top: 2%;
     right: 5%;
     font-size: 2em;}
+    
+   /* a.topClosebtn {
+	  position: absolute;
+    top: 2%;
+    right: 5%;
+    font-size: 2em;}*/
 
 @media screen and (max-height: 450px) {
   .overlay {

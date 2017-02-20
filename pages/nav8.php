@@ -5,9 +5,9 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Accordion Navigation</title>
+  <title>8 Tab Navigation</title>
   <meta name="description" content="">
-  <meta name="author" content="sue" >
+  <meta name="author" content="root" >
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -23,13 +23,10 @@
   <link rel="stylesheet" href="../css/skeleton.css">
     <link rel="stylesheet" href="../css/base.css"> 
    <link rel="stylesheet" href="../css/simple-slideshow-styles.css">
-    <link rel="stylesheet" href="../css/accordion.css">
   
          
  <!-- JavaScript
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <!-- Required for Accordion -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -42,219 +39,31 @@
 <header>
 <div>
 <ul class="top-bar">
-  <li>	<!-- <span class="hamburger" onclick="openSideNav()">&#9776;</span> -->
-     <a class="hamburger" href="#slidingSideNav">&#9776;</a>
-  </li>
-   <li><a href="../skel-index.html"><img class="home" src="../images/icons/home.svg" alt="Home"></a></li>
+  
+  <li><a href="../skel-index.html"><img class="home" src="../images/icons/home.svg" alt="Home"></a></li>
   <li><a href="gallery1.html">Gallery 1</a></li>
   <li><a href="gallery2.html">Gallery 2</a></li> 
   <li><a href="gallery3.html">Gallery 3</a></li>
   <li><a href="gallery4.html">Gallery 4</a></li>
+</ul>
 </div>
-</header>
- <!-- sliding side navigation
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <!-- The overlay -->
- <!-- Overlay content -->
-<div id="slidingSideNav" class="overlay">
- <!--  <a href="javascript:void(0)" class="sideClosebtn" onclick="closeSideNav()">&times;</a> -->
-   <a class="sideClosebtn" href="#">&times;</a>
-  <div class="side-overlay-content">
-  <!-- ACCORDION
-    ================================================== -->
-	<h1 id="accordion">Accordion Side Nav</h1>
-	<aside class="accordion">
-		<h1>Category A</h1>
-		<div>
-			<h2>Sub Category</h2>
-		<!-- 	<div>
-				<ul>
-					<li>
-						<a href="#">A Link</a>
-					</li>
-					<li>
-						<a href="#">Another Link</a>
-					</li>
-				</ul>
-			</div> -->
-				<div>
-				<ul>
-					<li>
-						<a  href="faq.html#ac-1">FAQ 1</a>
-					</li>
-					<li>
-						<a href="faq.html#ac-2">FAQ 2</a>
-					</li>
-					<li>
-						<a href="faq.html#ac-3">FAQ 3</a>
-					</li>
-					<li>
-						<a href="faq.html#ac-4">FAQ 4</a>
-					</li>
-					<li>
-						<a  href="faq.html#ac-5">FAQ 5</a>
-					</li>
-					<li>
-						<a  href="faq.html#ac-6">FAQ 6</a>
-					</li>
-					<li>
-						<a   href="faq.html#ac-7">FAQ 7</a>
-					</li>
-					<li>
-						<a   href="faq.html#ac-8">FAQ 8</a>
-					</li>
-				</ul>
-			</div>
-			<h2>Sub Category</h2>
-			<div>
-				<ul>
-					<li>
-						<a href="#">A Link</a>
-					</li>
-					<li>
-						<a href="#">Another Link</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<h1>Category B</h1>
-		<div>
-			<h2>Sub Category</h2>
-			<div>
-				<h3>Another Sub Category</h3>
-				<div>
-					<ul>
-						<li>
-							<a href="#">A Link</a>
-						</li>
-						<li>
-							<a href="#">Another Link</a>
-						</li>
-					</ul>
-				</div>
-				<h3>Another Sub Category</h3>
-				<div>
-					<ul>
-						<li>
-							<a href="#">A Link</a>
-						</li>
-						<li>
-							<a href="#">Another Link</a>
-						</li>
-					</ul>
-				</div>
-				<h3>Another Sub Category</h3>
-				<div>
-					<ul>
-						<li>
-							<a href="#">A Link</a>
-						</li>
-						<li>
-							<a href="#">Yet Another Link</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<h2>Sub Category</h2>
-			<div>
-				<h3>Another Sub Category</h3>
-				<div>
-					<ul>
-						<li>
-							<a href="#">A Link</a>
-						</li>
-						<li>
-							<a href="#">Another Link</a>
-						</li>
-						<li>
-							<a href="#">Yet Another Link</a>
-						</li>
-					</ul>
-				</div>
-				<h3>Another Sub Category</h3>
-				<div>
-					<ul>
-						<li>
-							<a href="#">A Link</a>
-						</li>
-						<li>
-							<a href="#">Another Link</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<h1>Category C</h1>
-		<div>
-			<h2>Sub Category</h2>
-			<div>
-				<ul>
-			<li>
-							<a href="#">A Link</a>
-						</li>
-						<li>
-							<a href="#">Another Link</a>
-						</li>
-				</ul>
-			</div>
-			<h2>Sub Category</h2>
-			<div>
-				<ul>
-				<li>
-							<a href="#">A Link</a>
-						</li>
-						<li>
-							<a href="#">Another Link</a>
-						</li>
-				</ul>
-			</div>
-			<h2>Sub Category</h2>
-			<div>
-				<ul>
-				<li>
-							<a href="#">A Link</a>
-						</li>
-						<li>
-							<a href="#">Another Link</a>
-						</li>
-						<li>
-							<a href="#">Yet Another Link</a>
-						</li>
-				</ul>
-			</div>
-		</div>
-		<h1>Category D</h1>
-		<div>
-			<ul>
-				<li>
-							<a href="#">A Link</a>
-						</li>
-						<li>
-							<a href="#">Another Link</a>
-						</li>
-			</ul>
-		</div>
-		<h1>Category E</h1>
-		<p>'Tis not so deep as a well, nor so wide as a church-door; but 'tis enough,'twill serve: ask for me to-morrow, and you shall find me a grave man. </p>
-	</aside>
-  </div>
-</div>
-  
 
-<header>
 <div class="logo-header">
 			<img class="logo" src="../images/logo.png">
 			<h1>Skin and Bones Skeleton</h1>
 					<h5>Based on <a href="http://getskeleton.com"> Skeleton - Version 2.0.4</a></h5>
 			</header>
 		</div><br class="clear">
-<hr>
-
+		<!-- Horizontal Navigation
+    ================================================== -->
+	<?php
+	require '../library/horiz-nav8.inc'
+	?>
 <!-- Breadcrumbs
     ================================================== -->
     <ul class="breadcrumb">
   <li><a href="../skel-index.html">Home</a></li>
-  <li>Accordion Sliding Side Nav</li>
+  <li>Eight Tab Horizontal Navigation</li>
  </ul>
  <div class="container">
  <div class="main">
@@ -316,8 +125,7 @@
 
 	<!-- Slideshow js
 ================================================== -->
-<!-- <script src="../js/site.js"></script> -->
-<script src="../js/accordion.js"></script>
+<script src="../js/site.js"></script>
 	<script src="../js/hammer.min.js">	</script><!-- for swipe support on touch interfaces -->
 	<script src="../js/better-simple-slideshow.min.js">	</script> 
 	<script>

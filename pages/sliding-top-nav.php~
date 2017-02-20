@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <title>Sliding Top Navigation</title>
   <meta name="description" content="">
-  <meta name="author" content="sue" >
+  <meta name="author" content="root" >
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -55,10 +55,8 @@
 <div id="slidingTopNav" class="overlay">
   
   <div class="top-overlay-content">
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Clients</a>
-    <a href="#">Contact</a>
+   <?php
+   ?>
   <!--   <a href="javascript:void(0)" class="topClosebtn" onclick="closeTopNav()">&times;</a> -->
     <a class="topClosebtn" href="#">&times;</a>
   

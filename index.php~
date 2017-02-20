@@ -33,7 +33,9 @@
 			<div class="one-third column">
 			<p>The basic Skeleton boilerplate is lightweight and simple. Skin And Bones Skeleton, not so much.</p>
 		
-<?php require 'library/slideshow.inc'	?>
+		<?php
+		require 'library/slideshow.inc'
+		?>
 					<p>For links to more information on various added features, open the side navigation using the hamburger icon.</p>
 			</div><!-- slideshow  end-->
 				<div class="one-third column">

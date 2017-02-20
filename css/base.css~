@@ -74,7 +74,6 @@ are based on 10px sizing. So basically 1.5rem = 15px :) */
 html {
   font-size: 62.5%; }
 body {
-	background-color: #000;
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
@@ -89,6 +88,11 @@ body {
 }
 .centertxt {
 	text-align: center;
+}
+.credits {background-color: #262626;
+font-family: 'Cherry Cream Soda', cursive;
+/*
+font-family: 'Righteous', cursive;*/
 }
 
 /* Typography
@@ -116,27 +120,6 @@ h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
 
 p {
   margin-top: 0; }
-  
-  .oops {
-  	margin-top: 20%;
-  color: white;
-  font-size: 12rem;
-   }
-   .oopsie {
-   	
-
-font-family: 'Rock Salt', cursive;
-/*font-family: 'Caveat Brush', cursive;*/
-   	text-shadow: .5rem .5rem 1.5rem rgba(255, 255, 255, 0.7);}
-   .rascal {
-   	font-family: 'Handlee', cursive;
-   	 color: white;
-  font-size: 2rem;
-   }
-     .check-out, .check-out a {
-   	 color: white;
-  font-size: 1.5rem;
-   }
 
 /* Header
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -146,7 +129,7 @@ ul.top-bar {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #000;
+    background-color: #333;
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
@@ -163,21 +146,11 @@ list-style-type: none;
     }
   
 .top-bar li a, .hamburger, .top-header-bar li a {
-    display: block;
+	float: left;
+    display: inline-block;
     color: white;
     padding: 1.2rem;
     text-decoration: none;
-}
-
-/* login, search and basket */
-li.right {
-		float: right;
-}
-li.right a {
-	display: block;
-	color: #285071;
-	padding: 0 1.5rem;
-	text-decoration: none;
 }
 
 .home {width: 2rem;}
@@ -200,48 +173,281 @@ li.right a {
 	background-color: #414a49;
 }
 
+/* login */
+li.right {
+	margin: 0 10px 0 0;
+	padding: 0;
 
+		float: right;
+			display: block;
+	
+	
+	text-decoration: none;
+	/*font-size: 1.75rem;color: #fff;padding: 0 20px;*/
+}
+
+
+/* Main content */
+.main {
+    margin-top: 3rem; } /*Add a top margin to avoid content overlay  by the top nav*/
+    
+    /* #Logo
+================================================== */
+
+.logo {
+	background: #fff;
+	margin: 2rem 5rem 0 3rem;
+	float: left;
+	width: 10%;
+	border-radius: 10%;
+	box-shadow: .5rem .5rem 1rem #414a49;
+	z-index: -1;
+}
+.logo-header {
+	margin-top: 5rem;
+	margin-bottom: .5rem;
+}
+.logo-header h1 {
+	font-size: 4.5rem;
+	padding-top: 1.25rem;
+	}
+.logo-header h5 {
+	padding-top: 0;
+}
+
+@media only screen and (max-width: 479px) {
+	.logo-header h1 {font-size: 3rem;}
+	.logo-header {margin-left: 2rem;}
+	.logo {display: none;}
+}
     /* #find and share icons
 ================================================== */
-.find-me-bar {
-	margin-top: 2rem;
+.find-us-bar {
+	padding: .6rem;
     width: 100%;
     text-align: center;
-    overflow: auto;
+    background-color:  #414a49;
+    background-image: url(../images/bg/tile-blk.jpg);
+   overflow: auto;
  }
- .find-me-bar ul {
+ .find-us-bar ul {
   	margin: 0;
  	padding: 0 2rem 0 0;
  }
 
-.find-me-bar ul li {
+.find-us-bar ul li {
 	display: inline;
    padding: 0 1rem;
    list-style: none;
   }
 
-.find-me-bar a {
-	  text-align: center;
-	  margin:  0 1rem;
-	 padding: 5px;
-	 color: black;
-	 	 opacity: 0.6;
-   background: white;
+.find-us-bar ul li a {
+    color: white;
     font-size: 2.25rem;
-     border-radius: 50%;
-  }
+   
+}
 
-.find-me-bar a:hover {
-     opacity: 1;
+.find-us-bar a:hover {
+    color: #bfbfbf;
+}
+
+@media only screen and (min-width: 479px){
+	.find-us-bar ul li {
+		 float: right;
+	}
+}
+
+@media only screen and (max-width: 479px) {
+	.find-us-bar ul li a {
+    font-size: 1.75rem;
+   }
 }
 
 
+
+/* horizontal navigation
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.main-nav {
+	margin: 0 auto;
+	padding: 1em 0 0 0;
+}
+
+.main-nav:after {
+	content: ".";
+	display: block;
+	line-height: 1px;
+	font-size: 1px;
+	clear: both;
+}
+ul.nav-horiz-a, ul.nav-horiz-b {
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+	width: 100%;
+	font-size: 1em;
+}
+ul.nav-horiz-a li, ul.nav-horiz-b li {
+	display: block;
+	float: left;
+	width: 12.5%;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+ul.nav-horiz-a li.nav-six, ul.nav-horiz-b li.nav-six {
+	display: block;
+	float: left;
+	width: 16.6666%;
+   margin: 0;
+	padding: 0;
+	text-align: center;
+}
+ul.nav-horiz-a li a, ul.nav-horiz-b li a {
+	display: block;
+	width: 100%;
+	padding: 0.5em;
+	height: 3rem;
+	line-height: 3rem;
+	font-weight: bold;
+	text-decoration: none;
+	color: #fff;
+	background: linear-gradient(#a6a6a5, #414a49);
+	border-width: 1px;
+	border-color: #ffe #aaab9c #ccc #fff;
+	border-style: solid;
+}
+.main-nav>ul.nav-horiz-a li a, .main-nav>ul.nav-horiz-b li a {
+	width: auto;
+}
+ul.nav-horiz-a li#active a, ul.nav-horiz-b li#active a {
+	background: linear-gradient(#c6c6c6, #eaeaea);
+	color: #800000;
+}
+ul.nav-horiz-a li a:hover, ul.nav-horiz-a li#active a:hover, ul.nav-horiz-b li a:hover, ul.nav-horiz-b li#active a:hover {
+	color: #777;
+	background: linear-gradient(#eaeaea, #c6c6c6);
+	}
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+
+	ul.nav-horiz-a li, ul.nav-horiz-b li, ul.nav-horiz-a li.nav-six, ul.nav-horiz-b li.nav-six {font-size: 0.8em; }
+	.logo {display: none;}
+	}
+
+	@media only screen and (max-width: 767px) {
+	
+		ul.nav-horiz-a li, ul.nav-horiz-b li { width: 25%;}
+		ul.nav-horiz-a li.nav-six, ul.nav-horiz-b li.nav-six {width: 50%;}
+   
+	}
+	/* breadcrumbs
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+ul.breadcrumb {
+    padding: 0;
+     margin: .25rem 2rem;
+    list-style: none;
+    font-size: 1.6rem;
+}
+ul.breadcrumb li {display: inline;}
+ul.breadcrumb li+li:before {
+    padding: .8rem;
+    color: black;
+    content: ">\00a0";
+}
+ul.breadcrumb li a {
+	 color: #1a8cff;
+    text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+    color: #0059b3;
+    text-decoration: underline;
+}
+
+/* sliding  vertical navigation
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+#slidingTopNav {
+    height: 0%;
+    width: 100%;
+   
+}
+#slidingTopNav:target {height:100%;}
+
+#slidingSideNav {
+    height: 100%;
+    width: 0%;
+}
+#slidingSideNav:target {width:40%;}
+
+.overlay { 
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-color: #262626; /* rgb(0,0,0);*/
+   /* background-color: rgba(0,0,0, 0.9);*/
+    overflow-y: hidden;
+    transition: 0.5s;}
+
+.top-overlay-content,.side-overlay-content {
+	 position: relative;
+    top: 5%;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.top-overlay-content  {
+    text-align: center; 
+}
+
+.side-overlay-content  {
+    text-align: left;
+   }
+
+.overlay a {
+    padding: 1rem 3rem;
+    text-decoration: none;
+    font-size: 24px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+a.sideClosebtn {
+	  position: absolute;
+    top: 2%;
+    right: 5%;
+    font-size: 2em;}
+    
+    a.topClosebtn {
+	  position: absolute;
+    top: 2%;
+    right: 5%;
+    font-size: 2em;}
+
+@media screen and (max-height: 450px) {
+  .overlay {
+   overflow-y: auto;}
+  .overlay a {font-size: 2rem;}
+ }
+@media only screen and (max-width: 479px) {
+	#slidingSideNav:target {width:100%;}
+
+	.sideClosebtn {
+    right: 2%;
+}
+}
+
 /* #Footer
 ================================================== */
-.footer-container {
-margin-top: 5%;}
+
 footer p, footer a {
-	color: #fff;
+	color: #4d4d4d;
 	font-size: 1.2rem;
 }
 footer a:hover {

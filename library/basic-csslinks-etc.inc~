@@ -1,0 +1,24 @@
+	<meta content="" name="description">
+	<meta content="sue" name="author"><!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<meta content="width=device-width, initial-scale=1" name="viewport"><!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css"><!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/skeleton.css" rel="stylesheet">
+	<link href="css/base.css" rel="stylesheet">
+	<link href="css/base.css" rel="stylesheet">
+	<link href="css/multiple-modal.css" rel="stylesheet">
+	<link href="css/simple-slideshow-styles.css" rel="stylesheet">
+	<link href="css/accordion.css" rel="stylesheet"><!--  Font Awesome by Dave Gandy - http://fontawesome.io -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"><!-- JavaScript
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<!-- Required for Accordion -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+	</script><!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link href="images/favicon.png" rel="icon" type="image/png">
+</head>
+<body>

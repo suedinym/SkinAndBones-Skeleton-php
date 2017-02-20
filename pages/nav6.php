@@ -5,7 +5,7 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Gallary | Single Modal</title>
+  <title>6 Tab Navigation</title>
   <meta name="description" content="">
   <meta name="author" content="root" >
 
@@ -22,7 +22,7 @@
    <link rel="stylesheet" href="../css/normalize.css">  
   <link rel="stylesheet" href="../css/skeleton.css">
     <link rel="stylesheet" href="../css/base.css"> 
-    <link rel="stylesheet" href="../css/multiple-modal.css">
+   <link rel="stylesheet" href="../css/simple-slideshow-styles.css">
   
          
  <!-- JavaScript
@@ -30,49 +30,90 @@
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="icon" type="image/png" href="../images/favicon.png">
 
 </head>
 <body>
  <!-- Header - fixed top menu
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <header>
-<div class="top-header-bar dkgry">
+<div>
 <ul class="top-bar">
   
-   <li><a href="../skel-index.html"><img class="home" src="../images/icons/home.svg" alt="Home"></a></li>
+  <li><a href="../skel-index.html"><img class="home" src="../images/icons/home.svg" alt="Home"></a></li>
   <li><a href="gallery1.html">Gallery 1</a></li>
   <li><a href="gallery2.html">Gallery 2</a></li> 
   <li><a href="gallery3.html">Gallery 3</a></li>
   <li><a href="gallery4.html">Gallery 4</a></li>
 </ul>
 </div>
-</header>
 
-
-<br class="clear">
-<hr>
-<div class="container">
-			<!-- columns should be the immediate child of a .row -->
-			<div class="row">
-				<div class="twelve columns view-detail">
-				<!-- Modal starts here
+<div class="logo-header">
+			<img class="logo" src="../images/logo.png">
+			<h1>Skin and Bones Skeleton</h1>
+					<h5>Based on <a href="http://getskeleton.com"> Skeleton - Version 2.0.4</a></h5>
+			</header>
+		</div><br class="clear">
+		<!-- Horizontal Navigation
     ================================================== -->
-				<h3 class="modal-head centertxt">Skull</h3>
-				<!-- modal one --><a href="#openModal1">
-				<img class="open-modal" src="../images/icons/enlarge.svg">
-				</a> <img class="gal1" src="../images/gallery/image2.png"></div><!-- The Modal -->
-				<!-- note: id is anchor  -->
-				<div class="modalDialog" id="openModal1">
-					<div><!-- The Close Button -->
-					<a class="modal-close" href="#close">&times;</a>
-					<h2>Alas, poor Yorick!</h2>
-					<img class="skel-gal" alt="" src="../images/gallery/image2.png"></div>
-				</div><!-- end modal one -->
-				</div>
+		<nav>
+	<?php
+	require '../library/horiz-nav6.inc'
+	?>
+		</nav>
+
+<!-- Breadcrumbs
+    ================================================== -->
+    <ul class="breadcrumb">
+  <li><a href="../skel-index.html">Home</a></li>
+  <li>Six Tab Horizontal Navigation</li>
+ </ul>
+    
+ <div class="container">
+ <div class="main">
+  		<!-- A Better Simple Slideshow Used here
+    ================================================== -->
+		<div class="sixteen columns">
+			<div class="bss-slides num1" tabindex="1">
+				<figure>
+					<img src="../images/slides/skel-slide1.jpg" width="100%">
+					<figcaption>
+						Anterior
+					</figcaption>
+				</figure>
+				<figure>
+					<img src="../images/slides/skel-slide2.jpg" width="100%">
+					<figcaption>
+						Right Side
+					</figcaption>
+				</figure>
+				<figure>
+					<img src="../images/slides/skel-slide3.jpg" width="100%">
+					<figcaption>
+						Posterior
+					</figcaption>
+				</figure>
+				<figure>
+					<img src="../images/slides/skel-slide4.jpg" width="100%">
+					<figcaption>
+						Left Side
+					</figcaption>
+				</figure>
+			</div>
+		</div>
+		
+		<!-- slideshow  end-->
+		 <hr>
+    <div class="row">
+      <div class="one-half column" style="margin-top: 5%">
+        <h4>Basic Page</h4>
+        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
+      
+      </div>
+    </div>
+    </div>
   </div>
   <!-- end container -->
-  <br>
   <hr>
 	<!-- Footer Container
     ================================================== -->
@@ -88,8 +129,27 @@
 
 	<!-- Slideshow js
 ================================================== -->
-<script src="js/site.js"></script>
+<script src="../js/site.js"></script>
+	<script src="../js/hammer.min.js">	</script><!-- for swipe support on touch interfaces -->
+	<script src="../js/better-simple-slideshow.min.js">	</script> 
+	<script>
+	var opts = {
+	   auto : {
+	       speed : 3500, 
+	       pauseOnHover : true
+	   },
+	   fullScreen : false, 
+	   swipe : true
+	};
+	makeBSS('.num1', opts);
 
+	var opts2 = {
+	   auto : false,
+	   fullScreen : true,
+	   swipe : true
+	};
+	makeBSS('.num2', opts2);
+	</script>
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>

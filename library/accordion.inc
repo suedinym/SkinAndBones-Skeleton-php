@@ -1,0 +1,175 @@
+<h1 id="accordion">Accordion Side Nav</h1>
+	<aside class="accordion">
+		<h1>Category A</h1>
+		<div>
+			<h2>Sub Category</h2>
+		<!-- 	<div>
+				<ul>
+					<li>
+						<a href="#">A Link</a>
+					</li>
+					<li>
+						<a href="#">Another Link</a>
+					</li>
+				</ul>
+			</div> -->
+				<div>
+				<ul>
+					<li>
+						<a  href="faq.html#ac-1">FAQ 1</a>
+					</li>
+					<li>
+						<a href="faq.html#ac-2">FAQ 2</a>
+					</li>
+					<li>
+						<a href="faq.html#ac-3">FAQ 3</a>
+					</li>
+					<li>
+						<a href="faq.html#ac-4">FAQ 4</a>
+					</li>
+					<li>
+						<a  href="faq.html#ac-5">FAQ 5</a>
+					</li>
+					<li>
+						<a  href="faq.html#ac-6">FAQ 6</a>
+					</li>
+					<li>
+						<a   href="faq.html#ac-7">FAQ 7</a>
+					</li>
+					<li>
+						<a   href="faq.html#ac-8">FAQ 8</a>
+					</li>
+				</ul>
+			</div>
+			<h2>Sub Category</h2>
+			<div>
+				<ul>
+					<li>
+						<a href="#">A Link</a>
+					</li>
+					<li>
+						<a href="#">Another Link</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<h1>Category B</h1>
+		<div>
+			<h2>Sub Category</h2>
+			<div>
+				<h3>Another Sub Category</h3>
+				<div>
+					<ul>
+						<li>
+							<a href="#">A Link</a>
+						</li>
+						<li>
+							<a href="#">Another Link</a>
+						</li>
+					</ul>
+				</div>
+				<h3>Another Sub Category</h3>
+				<div>
+					<ul>
+						<li>
+							<a href="#">A Link</a>
+						</li>
+						<li>
+							<a href="#">Another Link</a>
+						</li>
+					</ul>
+				</div>
+				<h3>Another Sub Category</h3>
+				<div>
+					<ul>
+						<li>
+							<a href="#">A Link</a>
+						</li>
+						<li>
+							<a href="#">Yet Another Link</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<h2>Sub Category</h2>
+			<div>
+				<h3>Another Sub Category</h3>
+				<div>
+					<ul>
+						<li>
+							<a href="#">A Link</a>
+						</li>
+						<li>
+							<a href="#">Another Link</a>
+						</li>
+						<li>
+							<a href="#">Yet Another Link</a>
+						</li>
+					</ul>
+				</div>
+				<h3>Another Sub Category</h3>
+				<div>
+					<ul>
+						<li>
+							<a href="#">A Link</a>
+						</li>
+						<li>
+							<a href="#">Another Link</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<h1>Category C</h1>
+		<div>
+			<h2>Sub Category</h2>
+			<div>
+				<ul>
+			<li>
+							<a href="#">A Link</a>
+						</li>
+						<li>
+							<a href="#">Another Link</a>
+						</li>
+				</ul>
+			</div>
+			<h2>Sub Category</h2>
+			<div>
+				<ul>
+				<li>
+							<a href="#">A Link</a>
+						</li>
+						<li>
+							<a href="#">Another Link</a>
+						</li>
+				</ul>
+			</div>
+			<h2>Sub Category</h2>
+			<div>
+				<ul>
+				<li>
+							<a href="#">A Link</a>
+						</li>
+						<li>
+							<a href="#">Another Link</a>
+						</li>
+						<li>
+							<a href="#">Yet Another Link</a>
+						</li>
+				</ul>
+			</div>
+		</div>
+		<h1>Category D</h1>
+		<div>
+			<ul>
+				<li>
+							<a href="#">A Link</a>
+						</li>
+						<li>
+							<a href="#">Another Link</a>
+						</li>
+			</ul>
+		</div>
+		<h1>Category E</h1>
+		<p>'Tis not so deep as a well, nor so wide as a church-door; but 'tis enough,'twill serve: ask for me to-morrow, and you shall find me a grave man. </p>
+	</aside>

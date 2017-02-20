@@ -276,7 +276,7 @@ $(this).prop("hash");
     ================================================== -->
 		<div class="sixteen columns">
 	<?php
-	require 'library/faq-accordion.inc'
+	require '../library/faq-accordion.inc'
 	<?
 
 		</div>
