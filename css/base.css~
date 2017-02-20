@@ -1,0 +1,292 @@
+/*
+* Skeleton V2.0.4
+* Copyright 2014, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 12/29/2014
+*/
+
+/*
+* SkinAndBones-Skeleton
+* Copyright 2015 -2017, Susan Jensen
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+*/
+
+/*Font Awesome by Dave Gandy - http://fontawesome.io*/
+
+/* Table of contents
+––––––––––––––––––––––––––––––––––––––––––––––––––
+- Reset & Basics (commented out, for debugging)
+- Base Styles
+- Typography
+- Header
+- Logo
+- Find and Share icons
+- Horizontal Navigation
+- Breadcrumbs
+- Sliding top and vertical navigation
+- Footer
+- Misc
+- Media Queries
+*/
+
+/* #Reset & Basics (Inspired by E. Meyers) The reset is in here for debugging purposes - Most of Skin and bones was originally worked up in the version of Skeleton with the reset, instead of normalize, and occasionally it creates problems with the previously written code. It's probably not necessary anymore, but there are few projects built from this template still being transferred to the new Skeleton, so for the moment the reset is still here.
+================================================== */
+/*
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+ a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*/
+
+/* Base Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* NOTE
+html is set to 62.5% so that all the REM measurements throughout Skeleton
+are based on 10px sizing. So basically 1.5rem = 15px :) */
+html {
+  font-size: 62.5%; }
+body {
+	background-color: #000;
+  font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #222; }
+
+/* add class to any text or item to center*/
+
+.center {
+	margin-left: auto;
+	margin-right: auto;
+}
+.centertxt {
+	text-align: center;
+}
+
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-weight: 300; }
+h1 { font-size: 4.0rem; line-height: 1.2;  letter-spacing: -.1rem;}
+h2 { font-size: 3.6rem; line-height: 1.25; letter-spacing: -.1rem; }
+h3 { font-size: 3.0rem; line-height: 1.3;  letter-spacing: -.1rem; }
+h4 { font-size: 2.4rem; line-height: 1.35; letter-spacing: -.08rem; }
+h5 { font-size: 1.8rem; line-height: 1.5;  letter-spacing: -.05rem; }
+h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+  h1 { font-size: 5.0rem; }
+  h2 { font-size: 4.2rem; }
+  h3 { font-size: 3.6rem; }
+  h4 { font-size: 3.0rem; }
+  h5 { font-size: 2.4rem; }
+  h6 { font-size: 1.5rem; }
+}
+
+p {
+  margin-top: 0; }
+  
+  .oops {
+  	margin-top: 20%;
+  color: white;
+  font-size: 12rem;
+   }
+   .oopsie {
+   	
+
+font-family: 'Rock Salt', cursive;
+/*font-family: 'Caveat Brush', cursive;*/
+   	text-shadow: .5rem .5rem 1.5rem rgba(255, 255, 255, 0.7);}
+   .rascal {
+   	font-family: 'Handlee', cursive;
+   	 color: white;
+  font-size: 2rem;
+   }
+     .check-out, .check-out a {
+   	 color: white;
+  font-size: 1.5rem;
+   }
+
+/* Header
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* The navigation bar */
+ul.top-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    z-index: 2;
+}
+
+.top-bar li, .top-header-bar li {
+    float: left;
+  }
+div.top-header-bar ul{
+list-style-type: none;
+    margin: 0;
+    padding: 0;
+    }
+  
+.top-bar li a, .hamburger, .top-header-bar li a {
+    display: block;
+    color: white;
+    padding: 1.2rem;
+    text-decoration: none;
+}
+
+/* login, search and basket */
+li.right {
+		float: right;
+}
+li.right a {
+	display: block;
+	color: #285071;
+	padding: 0 1.5rem;
+	text-decoration: none;
+}
+
+.home {width: 2rem;}
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+	
+	.hamburger {
+		 font-size: 1em;
+	}
+	.top-bar li a {
+		 font-size: .75em;
+	}
+.top-bar li a, .hamburger {
+      padding: .66rem .5rem;
+     }  
+}
+.top-header-bar{
+	display: inline-block;
+	width: 100%;
+	background-color: #414a49;
+}
+
+
+    /* #find and share icons
+================================================== */
+.find-me-bar {
+	margin-top: 2rem;
+    width: 100%;
+    text-align: center;
+    overflow: auto;
+ }
+ .find-me-bar ul {
+  	margin: 0;
+ 	padding: 0 2rem 0 0;
+ }
+
+.find-me-bar ul li {
+	display: inline;
+   padding: 0 1rem;
+   list-style: none;
+  }
+
+.find-me-bar a {
+	  text-align: center;
+	  margin:  0 1rem;
+	 padding: 5px;
+	 color: black;
+	 	 opacity: 0.6;
+   background: white;
+    font-size: 2.25rem;
+     border-radius: 50%;
+  }
+
+.find-me-bar a:hover {
+     opacity: 1;
+}
+
+
+/* #Footer
+================================================== */
+.footer-container {
+margin-top: 5%;}
+footer p, footer a {
+	color: #fff;
+	font-size: 1.2rem;
+}
+footer a:hover {
+	color: #BBBBBB;
+}
+.copyright, .copyright a {
+	font-size: .9rem;
+}
+
+
+/* Misc
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+hr {
+  margin-top: .5rem;
+  margin-bottom: 1rem;
+  border-width: 0;
+  border-top: 1px solid #b3b3b3; }
+
+
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*
+Note: The best way to structure the use of media queries is to create the queries
+near the relevant code. For example, if you wanted to change the styles for buttons
+on small devices, paste the mobile query code up in the buttons section and style it
+there.
+*/
+
+	
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {}
+
+@media screen and (max-height: 450px) {}
+
+/* Larger than mobile */
+@media (min-width: 400px) {}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {}
+
+/* Larger than tablet */
+@media (min-width: 750px) {}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}

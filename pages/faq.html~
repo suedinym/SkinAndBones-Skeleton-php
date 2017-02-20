@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>FAQ Page</title>
+  <meta name="description" content="">
+  <meta name="author" content="sue" >
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+   <link rel="stylesheet" href="../css/normalize.css">  
+  <link rel="stylesheet" href="../css/skeleton.css">
+    <link rel="stylesheet" href="../css/skel-base.css"> 
+     <link rel="stylesheet" href="../css/accordion.css">
+     <link rel="stylesheet" href="../css/faq-style.css">
+  
+         
+ <!-- JavaScript
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- Required for Accordion -->
+   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script>
+	/*For local link TO radio accordion from css overlay -getting the hash doesn't work, because the overlay target is a hash and becomes the default  url*/
+jQuery(document).ready(function() {
+
+$('.open-local-faq').click(function(){
+ // get the #section from the anchor clicked on.
+var href = $(this).attr('href');
+$(this).prop("hash");
+    // open accordion
+     $(href).prop("checked", true);
+         //scroll
+   var accordionTop =  $(hash).closest('section');
+   $('html, body').animate({
+            scrollTop: $(accordionTop).offset().top
+       }, 500);
+     });
+
+	//for external Link to accordion -external links are on sliding-side-nav-accordion page
+    var hash = window.location.hash; 
+      $(hash).prop("checked", true);
+    var accordionTop =  $(hash).closest('section');
+   $('html, body').animate({
+            scrollTop: $(accordionTop).offset().top
+        }, 500);
+});
+
+</script> 
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+
+</head>
+<body>
+ <!-- Header - fixed top menu
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<header>
+<div>
+<ul class="top-bar" id="top">
+  <li>	<!-- <span class="hamburger" onclick="openSideNav()">&#9776;</span>   -->
+    <a href="#slidingSideNav">&#9776;</a> 
+  
+  </li>
+   <li><a href="../index.html"><img class="home" src="../images/icons/home.svg" alt="Home"></a></li>
+
+</div>
+</header>
+
+ <!-- sliding side navigation
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- The overlay -->
+ <!-- Overlay content -->
+<div id="slidingSideNav" class="overlay">
+<!--    <a href="javascript:void(0)" class="sideClosebtn" <!-- onclick="closeSideNav() 
+  ">&times;</a>   -->
+   <a class="sideClosebtn" href="#top">&times;</a> 
+  <div class="side-overlay-content">
+  <!-- ACCORDION
+    ================================================== -->
+	<h1 id="accordion">Accordion Side Nav</h1>
+	<aside class="accordion">
+		<h1>Category A</h1>
+		<div>
+			<h2>Sub Category</h2>
+			<div>
+				<ul>
+					<li>
+						<a class="open-local-faq" href="#ac-1">FAQ 1</a>
+					</li>
+					<li>
+						<a class="open-local-faq" href="#ac-2">FAQ 2</a>
+					</li>
+					<li>
+						<a class="open-local-faq"  href="#ac-3">FAQ 3</a>
+					</li>
+					<li>
+						<a class="open-local-faq"  href="#ac-4">FAQ 4</a>
+					</li>
+						<li>
+						<a class="open-local-faq" href="#ac-5">FAQ 5</a>
+					</li>
+					<li>
+						<a class="open-local-faq" href="#ac-6">FAQ 6</a>
+					</li>
+					<li>
+						<a class="open-local-faq"  href="#ac-7">FAQ 7</a>
+					</li>
+					<li>
+						<a class="open-local-faq"  href="#ac-8">FAQ 8</a>
+					</li>
+				</ul>
+			</div>
+			<h2>Sub Category</h2>
+			<div>
+				<ul>
+					<li>
+						<a href="#">A Link</a>
+					</li>
+					<li>
+						<a href="#">Another Link</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<h1>Category B</h1>
+		<div>
+			<h2>Sub Category</h2>
+			<div>
+				<h3>Another Sub Category</h3>
+				<div>
+					<ul>
+						<li>
+							<a href="#">A Link</a>
+						</li>
+						<li>
+							<a href="#">Another Link</a>
+						</li>
+					</ul>
+				</div>
+				<h3>Another Sub Category</h3>
+				<div>
+					<ul>
+						<li>
+							<a href="#">A Link</a>
+						</li>
+						<li>
+							<a href="#">Another Link</a>
+						</li>
+					</ul>
+				</div>
+				<h3>Another Sub Category</h3>
+				<div>
+					<ul>
+						<li>
+							<a href="#">A Link</a>
+						</li>
+						<li>
+							<a href="#">Yet Another Link</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<h2>Sub Category</h2>
+			<div>
+				<h3>Another Sub Category</h3>
+				<div>
+					<ul>
+						<li>
+							<a href="#">A Link</a>
+						</li>
+						<li>
+							<a href="#">Another Link</a>
+						</li>
+						<li>
+							<a href="#">Yet Another Link</a>
+						</li>
+					</ul>
+				</div>
+				<h3>Another Sub Category</h3>
+				<div>
+					<ul>
+						<li>
+							<a href="#">A Link</a>
+						</li>
+						<li>
+							<a href="#">Another Link</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<h1>Category C</h1>
+		<div>
+			<h2>Sub Category</h2>
+			<div>
+				<ul>
+			<li>
+							<a href="#">A Link</a>
+						</li>
+						<li>
+							<a href="#">Another Link</a>
+						</li>
+				</ul>
+			</div>
+			<h2>Sub Category</h2>
+			<div>
+				<ul>
+				<li>
+							<a href="#">A Link</a>
+						</li>
+						<li>
+							<a href="#">Another Link</a>
+						</li>
+				</ul>
+			</div>
+			<h2>Sub Category</h2>
+			<div>
+				<ul>
+				<li>
+							<a href="#">A Link</a>
+						</li>
+						<li>
+							<a href="#">Another Link</a>
+						</li>
+						<li>
+							<a href="#">Yet Another Link</a>
+						</li>
+				</ul>
+			</div>
+		</div>
+		<h1>Category D</h1>
+		<div>
+			<ul>
+				<li>
+							<a href="#">A Link</a>
+						</li>
+						<li>
+							<a href="#">Another Link</a>
+						</li>
+			</ul>
+		</div>
+		<h1>Category E</h1>
+		<p>'Tis not so deep as a well, nor so wide as a church-door; but 'tis enough,'twill serve: ask for me to-morrow, and you shall find me a grave man. </p>
+	</aside>
+  </div>
+</div>
+  
+
+<header>
+<div class="logo-header" >
+
+			<img class="logo" src="../images/logo.png">
+			<h1 >Skin and Bones Skeleton</h1>
+					<h5>Based on <a href="http://getskeleton.com"> Skeleton - Version 2.0.4</a></h5>
+			</header>
+		</div><br class="clear">
+<hr>
+
+
+ 
+ <div class="container">
+ <div class="main">
+   <div class="row">		
+   <!-- Accordion Faq
+    ================================================== -->
+		<div class="sixteen columns">
+		<section class="faq-container">
+			<!--start accordion one section 1 -->
+			
+			<div>
+				<input checked id="ac-1" name="accordion-1" type="radio"> <label for="ac-1">FAQ Question 1</label>
+				<article>
+			
+			       <p>It is better to know some of the questions than all of the answers. -James Thurber</p>   
+			
+				</article>
+			</div><!--start accordion one section 2 -->
+			<div>
+				<input id="ac-2" name="accordion-1" type="radio"> <label for="ac-2">FAQ Question 2</label>
+				<article>
+			
+			       <p>It is better to know some of the questions than all of the answers. -James Thurber</p>   
+			
+				</article>
+			</div><!--start accordion one section 3 -->
+			<div>
+				<input id="ac-3" name="accordion-1" type="radio"> <label for="ac-3">FAQ Question 3</label>
+				<article>
+					
+			       <p>It is better to know some of the questions than all of the answers. -James Thurber</p>   
+			
+				</article>
+			</div><!--start accordion one section 4 -->
+			<div>
+				<input id="ac-4" name="accordion-1" type="radio"> <label for="ac-4">FAQ Question 4</label>
+				<article>
+			
+			       <p>It is better to know some of the questions than all of the answers. -James Thurber</p>   
+			
+				</article>
+				</div>
+				<div>
+				<input id="ac-5" name="accordion-1" type="radio"> <label for="ac-5">FAQ Question 5</label>
+				<article>
+			
+			       <p>It is better to know some of the questions than all of the answers. -James Thurber</p>   
+			
+				</article>
+				</div>
+				<div>
+				<input id="ac-6" name="accordion-1" type="radio"> <label for="ac-6">FAQ Question 6 </label>
+				<article>
+			
+			       <p>It is better to know some of the questions than all of the answers. -James Thurber</p>   
+			
+				</article>
+				</div>
+				<div>
+				<input id="ac-7" name="accordion-1" type="radio"> <label for="ac-7">FAQ Question 7</label>
+				<article>
+			
+			       <p>It is better to know some of the questions than all of the answers. -James Thurber</p>   
+			
+				</article>
+				</div>
+				<div>
+				<input id="ac-8" name="accordion-1" type="radio"> <label for="ac-8">FAQ Question 8</label>
+				<article>
+			
+			       <p>It is better to know some of the questions than all of the answers. -James Thurber</p>   
+			
+				</article>
+				</div>
+				</section>
+
+		</div>
+		</div>
+    </div>
+  </div>
+  <!-- end container -->
+  <hr>
+	<!-- Footer Container
+    ================================================== -->
+	<footer>
+		<div class="footer-container centertxt" >
+			<p><!-- Unless otherwise noted, all photography and artwork on this website is copyrighted and is not to be used without the permission of the copyright holder.<br> -->
+			&copy; Copyright Holder 2017 <a href="http://getskeleton.com">www.getskeleton.com</a><br>
+			All Rights Reserved</p>
+		</div>
+	</footer><!-- end footer container -->
+  
+  
+
+	<!-- Slideshow js
+================================================== -->
+ <!--  <script src="../js/site.js"></script>  -->  
+<script src="../js/accordion.js"></script>
+	<script src="../js/hammer.min.js">	</script><!-- for swipe support on touch interfaces -->
+	<script src="../js/better-simple-slideshow.min.js">	</script> 
+	<script>
+	var opts = {
+	   auto : {
+	       speed : 3500, 
+	       pauseOnHover : true
+	   },
+	   fullScreen : false, 
+	   swipe : true
+	};
+	makeBSS('.num1', opts);
+
+	var opts2 = {
+	   auto : false,
+	   fullScreen : true,
+	   swipe : true
+	};
+	makeBSS('.num2', opts2);
+	</script>
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

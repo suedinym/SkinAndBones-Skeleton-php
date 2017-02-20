@@ -1,0 +1,707 @@
+/*
+* Skeleton V2.0.4
+* Copyright 2014, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 12/29/2014
+*/
+
+/*
+* SkinAndBones-Skeleton
+* Copyright 2015 -2017, Susan Jensen
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+*/
+
+/*Font Awesome by Dave Gandy - http://fontawesome.io*/
+
+/* Table of contents
+––––––––––––––––––––––––––––––––––––––––––––––––––
+- Reset & Basics (commented out, for debugging)
+- Base Styles
+- Typography
+- Header
+- Logo
+- Find and Share icons
+- Horizontal Navigation
+- Breadcrumbs
+- Sliding top and vertical navigation
+- Footer
+- Misc
+- Media Queries
+*/
+
+
+/* Base Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* NOTE
+html is set to 62.5% so that all the REM measurements throughout Skeleton
+are based on 10px sizing. So basically 1.5rem = 15px :) */
+html {
+  font-size: 62.5%; }
+body {
+  font-size: 1.7em; /* currently ems cause chrome bug misinterpreting rems on body element */
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: 'Josefin Slab', serif;
+
+  color: #222; 
+  background: #f6f2e7;}
+
+/* add class to any text or item to center*/
+
+.center {
+	margin-left: auto;
+	margin-right: auto;
+}
+.centertxt {
+	text-align: center;
+}
+/* #Basic colors
+================================================== */
+	
+	.dk-bl {
+		background-color: #224460;
+	}
+	.lt-bl {
+		background-color: #285071;
+	}
+	.dk-grn {
+		background-color: #8aa970;
+	}
+	.lt-grn {
+		background-color: #aac096;
+	}
+	.dk-org {
+		background-color: #e09f6f;
+	}
+	.lt-org {
+		background-color: #e9b896;
+	}
+	.dk-bl-txt {
+		color: #224460;
+	}
+	.lt-bl-txt {
+		color: #285071;
+	}
+	.dk-grn-txt {
+		color: #8aa970;
+	}
+	.lt-grn-txt {
+		color: #aac096;
+	}
+	.dk-org-txt {
+		color: #e09f6f;
+	}
+	.lt-org-txt {
+		color: #e9b896;
+	}
+
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-weight: 300;
+  /* font-family: 'IM Fell French Canon SC', serif;*/
+  font-family: 'IM Fell DW Pica SC', serif;
+   color: #285071;
+ }
+
+h1 { font-size: 4.0rem; line-height: 1.2;  letter-spacing: -.1rem;}
+h2 { font-size: 3.6rem; line-height: 1.25; letter-spacing: -.1rem; }
+h3 { font-size: 3.0rem; line-height: 1.3;  letter-spacing: -.1rem; }
+h4 { font-size: 2.4rem; line-height: 1.35; letter-spacing: -.08rem; }
+h5 { font-size: 1.8rem; line-height: 1.5;  letter-spacing: -.05rem;
+text-shadow: .25rem .25rem .5rem rgba(0, 0, 0, 0.3); }
+h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+  h1 { font-size: 5.0rem; }
+  h2 { font-size: 4.2rem; }
+  h3 { font-size: 3.6rem; }
+  h4 { font-size: 3.0rem; }
+  h5 { font-size: 2.4rem; }
+  h6 { font-size: 1.5rem; }
+}
+.tagline {
+	color:#356b97;
+	/*color: #8aa970;*/
+	text-shadow: .25rem .25rem .5rem rgba(0, 0, 0, 0.3);}
+.align-right {text-align: right;}
+p {
+  margin-top: 0; }
+  /* Lists
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.bullet-info ul {
+  list-style: circle inside; }
+
+.bullet-info li {
+  margin-bottom: 1rem; }
+
+/* Header
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* so this needs a little explanation. 
+First, the login and basket icons, plus search float right, and the hamburger, Shop the collection, the phone icon and the phone number float left. The search moves towards the left. Then when the size is mobile, the search moves to the bottom. Everything else stays on top, but Shop the collection is truncated, the phone number dissappears and the phone icon moves to the right. */
+.top-bar, .bottom-bar {
+	padding: 5px;
+		overflow: hidden;
+	position: fixed;
+     background: #eae1c8;
+     color: #285071;
+       z-index: 1; /* so the accordion goes on top as 2*/
+}
+.top-bar {
+	top: 0;
+	width: 100%;
+	 border-bottom: 1px #ccc solid;	
+}
+.bottom-bar {
+	bottom: 0;
+	width: 100%;
+	 border-top: 1px #ccc solid;
+	 padding-bottom: 10px;
+	
+	
+}
+/* larger than mobile, no bar on the bottom */
+@media only screen and (min-width: 479px) {
+	.bottom-bar{
+		display: none;
+	}
+}
+
+.top-bar ul, .bottom-bar ul {
+	margin: 0;
+	padding: 0;
+}
+.top-bar ul li, .bottom-bar ul li {
+	list-style-type: none;
+}
+/* the phone, etc, float left. phone icon is left-then right */
+li.left, .left-then-right {
+	float: left;
+}
+/* login, search and basket */
+li.right {
+		float: right;
+}
+li.right a, li.left a, .left-then-right a, .phone-number a {
+	display: block;
+	color: #285071;
+	padding: 0 1.5rem;
+	text-decoration: none;
+}
+/* this scrolls the rest under the bars */
+/*Add a  margin to avoid content overlay  by top and bottom nav*/
+.main {
+		
+      margin-top: 3rem;
+}
+@media only screen and (max-width: 479px) {
+	.bottom-mobile, .phone-number, .collect, .top-search {
+		display: none;
+	}
+	.left-then-right {float: right;} /* phone icon floats right on mobile*/
+	.main {margin-bottom: 5%;}
+}
+
+/* search
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.top-search, .bottom-search{
+  position: relative;
+color: #285071;
+}
+
+.top-search input, .bottom-search input {
+    margin: 0;
+    height: 10px;
+    border: 1px solid #D1D1D1;
+    border-radius: 4px;
+    background-color: whitesmoke;
+    font-family: "Helvetica", Sans-Serif;
+    font-size: 1.3rem;
+ 
+ }
+ .top-search input{
+  width: 30%;
+    float:right;
+  padding: 7px 32px 7px 2px;
+    -webkit-transition: width 0.2s ease-in-out;
+    transition: width 0.2s ease-in-out;
+  }
+ 
+.bottom-search input {
+    text-indent: 32px;
+    width:95%;
+    padding: 7px 2px;
+}
+
+.top-search input:focus, .bottom-search input:focus { 
+    background-color: white;
+    border: 1px solid  #db8e57;
+    outline: 0;}
+.top-search input:focus { 
+	 width:  100% ;
+    background-color: white;
+    border: 1px solid  #db8e57;
+    outline: 0;}
+.top-search .fa-search { 
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.bottom-search .fa-search { 
+   position: absolute;
+  top: 6px;
+  left: 5px;
+}
+
+    
+    /* #Logo
+================================================== */
+
+.logo {
+	background: #fff;
+	margin: 1rem 5rem 0 3rem;
+	float: left;
+	width: 20%;
+	border-width: .75rem;
+	border-color: #285071;
+	border-style: double;
+ 	border-radius: 50%;
+	box-shadow: .5rem .5rem 1rem #414a49;
+	z-index: -1;
+}
+.logo-header {
+	margin-top: 5rem;
+	margin-bottom: .25rem;
+}
+.logo-header h1 {
+	position: relative;
+	font-size: 4.5rem;
+	margin-top: 1.75rem;
+	padding-top: 2.5rem;
+	text-shadow: .5rem .5rem 1rem rgba(0, 0, 0, 0.6);
+	}
+.logo-header h5 {
+	padding-top: 0;
+	text-shadow: .5rem .5rem 1rem rgba(0, 0, 0, 0.6);
+}
+
+@media only screen and (max-width: 479px) {
+	.logo-header h1 {font-size: 3rem;}
+	.logo-header {margin-left: 2rem;}
+	.logo {display: none;}
+}
+    /* #find and share icons
+================================================== */
+.find-pottery-bar {
+position: absolute;
+right: 2%;
+top: 5.5rem;
+   text-align: center;
+   float: right;
+}
+
+.find-pottery-bar a {
+	 display: block;
+    transition: all 0.3s ease;
+    color: #285071;
+    font-size: 2.25rem;
+    text-shadow: .5rem .5rem 1rem rgba(0, 0, 0, 0.6);
+}
+
+.find-pottery-bar a:hover {
+    color: #8aa970;
+    }
+    
+/* horizontal navigation
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.main-nav {
+	margin: 0 auto;
+	padding: 1em 0 0 0;
+}
+
+.main-nav:after {
+	content: ".";
+	display: block;
+	line-height: 1px;
+	font-size: 1px;
+	clear: both;
+}
+ul.nav-horiz-a, ul.nav-horiz-b {
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+	width: 100%;
+	font-size: 1.25em;
+	text-shadow: .25rem .25rem .5rem rgba(126, 68, 27, 0.7);
+	
+}
+
+ul.nav-horiz-a li, ul.nav-horiz-b li {
+	display: block;
+	float: left;
+	width: 12.5%;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+ul.nav-horiz-a li.nav-six, ul.nav-horiz-b li.nav-six {
+	display: block;
+	float: left;
+	width: 16.6666%;
+   margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+ul.nav-horiz-a li a, ul.nav-horiz-b li a, ul.nav-horiz-a li p {
+	display: block;
+	width: 100%;
+	padding: 0.5em;
+	height: 3rem;
+	line-height: 3rem;
+	font-weight: bold;
+	text-decoration: none;
+	color: #fff;
+	background: #e9b896;
+	border-width: 1px;
+	border-color: #ffe #aaab9c #ccc #fff;
+	border-style: solid;
+	
+}
+.main-nav>ul.nav-horiz-a li a, .main-nav>ul.nav-horiz-b li a, ul.nav-horiz-a li p, ul.nav-horiz-a li p:hover {
+	width: auto;
+	 text-shadow: .35rem .35rem .5rem rgba(61, 80, 48, 0.6);
+}
+ul.nav-horiz-a li#active a, ul.nav-horiz-b li#active a {
+background: #e09f6f;
+	color: #595959
+}
+ul.nav-horiz-a li a:hover, ul.nav-horiz-a li#active a:hover, ul.nav-horiz-b li a:hover, ul.nav-horiz-b li#active a:hover, ul.nav-horiz-a li p:hover {
+	color: #777;
+	background: #aac096;
+	}
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+
+	ul.nav-horiz-a li, ul.nav-horiz-b li, ul.nav-horiz-a li.nav-six, ul.nav-horiz-b li.nav-six {font-size: 0.8em; }
+	.logo {display: none;}
+	}
+
+	@media only screen and (max-width: 767px) {
+	
+		ul.nav-horiz-a li, ul.nav-horiz-b li { width: 25%;}
+		ul.nav-horiz-a li.nav-six, ul.nav-horiz-b li.nav-six {width: 50%;}
+   
+	}
+	/* breadcrumbs
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+ul.breadcrumb {
+    padding: 0;
+     margin: .25rem 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+   
+}
+ul.breadcrumb li {display: inline;}
+ul.breadcrumb li+li:before {
+    padding: .8rem;
+    color: black;
+    content: ">\00a0";
+}
+ul.breadcrumb li a {
+	 color: #1a8cff;
+    text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+    color: #0059b3;
+    text-decoration: underline;
+}
+
+/* sliding  vertical navigation
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+
+#slidingSideNav.overlay {
+    height: 100%;
+    width: 0%;
+}
+#slidingSideNav:target {width:40%;}
+.overlay { 
+    
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: #224460; /* rgb(0,0,0);*/
+   /* background-color: rgba(0,0,0, 0.9);*/
+    overflow-y: hidden;
+    transition: 0.5s;}
+
+.top-overlay-content,.side-overlay-content {
+	 position: relative;
+    top: 5%;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.top-overlay-content  {
+    text-align: center; 
+}
+
+.side-overlay-content  {
+    text-align: left;
+   }
+
+.overlay a {
+    padding: 1rem 3rem;
+    text-decoration: none;
+    font-size: 24px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+a.sideClosebtn {
+	  position: absolute;
+    top: 2%;
+    right: 5%;
+    font-size: 2em;}
+
+
+@media screen and (max-height: 450px) {
+  .overlay {
+   overflow-y: auto;}
+  .overlay a {font-size: 2rem;}
+ }
+@media only screen and (max-width: 479px) {
+	#slidingSideNav:target {width:100%;}
+
+	.sideClosebtn {
+    right: 2%;
+}
+}
+
+
+
+
+/* #INDIVIDUAL PAGE STYLES
+================================================== */
+	/* #SHOP BY ITEM
+================================================== */
+.item-pg-banner{ padding: 20px 0;
+margin: 45px 0 15px 0;}
+	/*item card*/
+	/*rounded corners*/
+	.spc-warn {color: red;}
+	.product-card {
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+		transition: 0.3s;
+		border-radius: 20px;
+		background-color: #8aa970;
+		color: #fff;
+		text-align: center;
+		margin: 20px;
+		position: relative;
+	}
+		.product-card-spc {
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+		transition: 0.3s;
+		border-radius: 20px;
+		background-color: #e09f6f;
+		color: #fff;
+		text-align: center;
+		margin: 20px;
+		position: relative;
+	}
+	.product-card img, .product-card-spc img {
+		width: 100%;
+		
+	}
+	/* Add rounded corners to the top left and the top right corner of the image */
+	
+	img.product {
+		border-radius: 20px 20px 0 0;
+		
+	}
+	/* On mouse-over, add a deeper shadow */
+	
+	.product-card:hover {
+		box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+	}
+	/* Add some padding inside the card container. positioned info button on card */
+	
+	.product-card a .info-button, .product-card-spc a .info-button {
+		   position: absolute;
+    bottom:  5%;
+    right: 5%;}
+    
+    .product-card a .info-button-item, .product-card-spc a .info-button-item {
+		   position: absolute;
+    bottom:  5%;
+    right: 7%;
+    width:20px;}
+	
+	.product-details {
+		
+		padding: 10px 16px;
+	}
+	/*.product-details ul li {list-style: none;
+display: block; float: left;
+}
+
+.product-details ul li a {padding: 5px;}*/
+	/* #Product Modal
+================================================== */
+	
+	.product-card a img, .product-card-spc a img {
+		width: 24px;
+	}
+	/* info image*/
+	
+	.modalDialog {
+		position: fixed;
+		font-family: Arial, Helvetica, sans-serif;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: rgba(0, 0, 0, 0.7);
+		z-index: 99999;
+		opacity: 0;
+		-webkit-transition: opacity 400ms ease-in;
+		-moz-transition: opacity 400ms ease-in;
+		transition: opacity 400ms ease-in;
+		pointer-events: none;
+	}
+	.modalDialog img {
+		width: 95%;
+	}
+	.modalDialog:target {
+		opacity: 1;
+		pointer-events: auto;
+	}
+	.modalDialog>div {
+		width: 40%;
+		position: relative;
+		margin: 25px auto;
+		padding: 5px 20px 13px 20px;
+		border-radius: 10px;
+		background: #fff;
+	}
+	 
+	.modal-close {
+		color: black;
+		font-size: 40px;
+		position: absolute;
+		right: 12px;
+		text-decoration: none;
+	}
+	.modal-close:hover {
+		color: red;
+	}
+	.stock-warning {
+		font-size: 16px;
+		color: red;
+	}
+	.price-reg, .modal-header,  .modalDialog label{
+	color: black;}
+	
+	
+	.sale {
+		color: red;
+	}
+	.add2cart {
+		background-color: red;
+		border: none;
+		color: white;
+		padding: 8px 32px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+		margin: 4px 2px;
+		cursor: pointer;
+	}
+	input.quan {
+		width: 5%;
+	}
+	@media screen and (max-width: 479px) {
+		.modalDialog>div {
+			width: 80%
+		}
+		.modalDialog img {
+			width: 75%;
+		}
+	}
+
+/* #Footer
+================================================== */
+
+footer p, footer a {
+	color: #4d4d4d;
+	font-size: 1.2rem;
+	}
+footer a:hover {
+	color: #BBBBBB;
+}
+.copyright, .copyright a {
+	font-size: .9rem;
+}
+@media screen and (max-height: 450px) {
+.footer-container {margin-bottom: 10%;}
+}
+
+
+/* Misc
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+hr {
+  margin-top: .5rem;
+  margin-bottom: 1rem;
+  border-width: 0;
+  border-top: 1px solid #b3b3b3; }
+
+
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*
+Note: The best way to structure the use of media queries is to create the queries
+near the relevant code. For example, if you wanted to change the styles for buttons
+on small devices, paste the mobile query code up in the buttons section and style it
+there.
+*/
+
+	
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {}
+
+@media screen and (max-height: 450px) {}
+
+/* Larger than mobile */
+@media (min-width: 400px) {}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {}
+
+/* Larger than tablet */
+@media (min-width: 750px) {}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}

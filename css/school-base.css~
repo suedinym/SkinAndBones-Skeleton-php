@@ -1,0 +1,573 @@
+/*
+* Skeleton V2.0.4
+* Copyright 2014, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 12/29/2014
+*/
+
+/*
+* SkinAndBones-Skeleton
+* Copyright 2015 -2017, Susan Jensen
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+*/
+
+/*Font Awesome by Dave Gandy - http://fontawesome.io*/
+
+/* Table of contents
+––––––––––––––––––––––––––––––––––––––––––––––––––
+- Reset & Basics (commented out, for debugging)
+- Base Styles
+- Typography
+- Header
+- Logo
+- Find and Share icons
+- Horizontal Navigation
+- Breadcrumbs
+- Sliding top and vertical navigation
+- Footer
+- Misc
+- Media Queries
+*/
+
+
+/* Base Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* NOTE
+html is set to 62.5% so that all the REM measurements throughout Skeleton
+are based on 10px sizing. So basically 1.5rem = 15px :) */
+html {
+  font-size: 62.5%; }
+body {
+  font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: 'Nunito', sans-serif;
+  color: #fff; 
+  background: #719394; 
+  background-image: url(../images/bg/grid-tile.jpg);}
+
+/* add class to any text or item to center*/
+
+.center {
+	margin-left: auto;
+	margin-right: auto;
+}
+.centertxt {
+	text-align: center;
+}
+.main { padding: 2.5rem 0;
+border-bottom:   1px dashed #ccc;
+box-shadow: inset 0 0 9px 5px rgba(0, 0, 0, 0.4);
+}
+ /*solid charcoal border*/
+ .box,.partners, #it, .bss-slides {border: 3px solid #414a49; }
+ 
+ /*the next bit dkgry currently repeats*/
+ .dkgry, .tableRowSub, .topHeaderBar,.shareHeaderBar, footer, .newCourse, .parents, #nav {background: #414a49; background-image: url(../images/bg/tile-blk.jpg);}
+ .dkgrn {background: #BF3030;
+background-image: url(../images/bg/grid-tile-dkgrn.jpg);
+/* margin:5px; this is for something in the about section*/}
+ /*dotted bottom border*/
+ #visionText_showHide, #missionText_showHide,#valuesText_showHide, #focusText_showHide, #goalsText_showHide, #atGlanceText_showHide {border: dashed; color: #fff; border-width: 0 0 1px;}
+/* #Basic colors
+================================================== */
+.red{background: #BF3030; color:white; }
+.orange{background: #f07502; color: white;}
+.yellow {background: #ffbc00; color: white;}
+.green{background:/* #00B366;*/#4fb086; color: white;}
+.blue{background: #0184cd; color: white;}
+.indigo{background: #5C5CA1; color: white;}
+.violet{background: #73458A; color: white;}
+.charcoal {background: #414a49; color: white;}
+
+.redtxt {color: #BF3030; }
+.orangetxt {color: #f07502;}
+.yellowtxt {color: #ffbc00;}
+.greentxt {color: #4fb086;}
+.bluetxt {color: #0184cd;}
+.indigotxt {color: #5C5CA1;}
+.violettxt {color: #73458A;}
+.charcoaltxt {color: #414a49; }
+
+.dashed-top { border-top: : 1px dashed #ccc;}
+.dashed-bottom { border-bottom: 1px dashed #ccc;}
+
+.lt-red {background-color: #f5d6d6;}
+.lt-org {background-color: #ffe3b3; }
+.mid-org {background-color:#fda34e; }
+.lt-yel {background-color: #fff1cc;}
+.lt-green {background-color:#b9dfcf; }
+.mid-green {background-color:  #84c8aa; }
+.lt-blu {background-color:#ccedff;}
+.lt-ind {background-color: #cecee3;}
+.mid-ind {background-color:#8e8ebe; }
+.lt-vi {background-color:#ddcce5;}
+.lt-char {background-color:#e4e7e7;}
+
+/*-red li a {background-color: #f5d6d6;}*/
+
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+ font-family: 'Pangolin', cursive;
+
+
+  font-weight: 300; }
+h1 { font-size: 4.0rem; line-height: 1.2;  letter-spacing: -.1rem;}
+h2 { font-size: 3.6rem; line-height: 1.25; letter-spacing: -.1rem; }
+h3 { font-size: 3.0rem; line-height: 1.3;  letter-spacing: -.1rem; }
+h4 { font-size: 2.4rem; line-height: 1.35; letter-spacing: -.08rem; }
+h5 { font-size: 1.8rem; line-height: 1.5;  letter-spacing: -.05rem; }
+h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+  h1 { font-size: 5.0rem; }
+  h2 { font-size: 4.2rem; }
+  h3 { font-size: 3.6rem; }
+  h4 { font-size: 3.0rem; }
+  h5 { font-size: 2.4rem; }
+  h6 { font-size: 1.5rem; }
+}
+
+p {
+  margin-top: 0; }
+   /* #Links
+================================================== */
+	a, a:visited { font-weight:bold; text-decoration: underline; }
+	a, a:active { color:#FFFFFF;  }
+	/*a:visited { color:#555555;  }*/
+   a:hover { color:#333333;  }
+
+/* Header
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* The navigation bar */
+
+ul.top-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    z-index: 2;
+    border-bottom: 1px dashed #ccc; /*was white.#d9d9d9;  #e6e6e6too bright*/
+    box-shadow: 0 4px  9px rgba(0, 0, 0, 0.4);
+}
+
+.top-bar li, .top-header-bar li {
+    float: left;
+  }
+div.top-header-bar ul{
+list-style-type: none;
+    margin: 0;
+    padding: 0;
+    }
+  
+.top-bar li a, .hamburger, .top-header-bar li a {
+    display: inline-block;
+    color: white;
+    padding: 1.2rem;
+    text-decoration: none;
+}
+
+.home {width: 2rem;}
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+	
+	.hamburger {
+		 font-size: 1em;
+	}
+	.top-bar li a {
+		 font-size: .75em;
+	}
+.top-bar li a, .hamburger {
+      padding: .66rem .5rem;
+     }  
+}
+.top-header-bar{
+	display: inline-block;
+	width: 100%;
+	background-color: #414a49;
+}
+li.right {float: right;}
+.topSearch {  position: relative;}
+
+#search {margin: 10px 0;}
+#search input[type="text"]{
+	
+	background-color: #ccc;
+  background-image:url(../images/bg/tile-blk.jpg);
+ /*   background-image: url(../images/icons/search-dark.png) no-repeat 10px 6px;*/  
+
+    border: 0 none;
+    font: bold 12px Arial,Helvetica,Sans-serif;
+    color: #fff;
+    width: 250px;
+    padding: 6px 15px 6px 35px;
+    margin-right: 10px;
+    border-radius: 20px;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 8px 4px rgba(0, 0, 0, 0.4);
+  }
+  
+  @media only screen and (max-width: 479px) {
+  	#search input[type="text"]{
+  		width: 150px;
+  }}
+  .fa-search { 
+ 
+  position: absolute;
+  top: 5px;
+  left: 10px;
+}
+
+
+
+    
+    /* #Logo
+================================================== */
+
+.logo {
+	position: absolute;
+	top: 2%;
+	left: 7%;
+	
+	background: #fff;
+/*	margin:2rem 5rem 2rem 5rem;*/
+	/*float: left;*/
+	width: 14%;
+	border-radius: 50%;
+	box-shadow: .5rem .5rem 1rem #414a49;
+	z-index: 3;
+}
+.logo-header {
+	
+	margin-top: 5rem;
+	margin-bottom: .5rem;
+	
+}
+
+.logo-header h1 {
+
+	font-size: 4.5rem;
+	padding-top: 3rem;
+	}
+
+.logo-header h5 {
+
+	padding-top: 0;
+}
+
+@media only screen and (max-width: 479px) {
+	.logo-header h1 {font-size: 3rem;}
+
+	.logo {
+	display: none;
+
+}
+}
+/* Larger than ??? */
+@media (max-width: 1000px) {
+.logo {/*display: none;*/
+width: 10%;
+}
+}
+    /* #find and share icons
+================================================== */
+.find-us-bar {
+	padding: .6rem;
+    width: 100%;
+    text-align: center;
+    background-color:  #414a49;
+   background-image: url(../images/bg/tile-blk.jpg);
+   overflow: auto;
+    border-bottom: 1px dashed #ccc; /*was white.#d9d9d9;  #e6e6e6too bright*/
+   /* box-shadow: 0 4px  9px rgba(0, 0, 0, 0.4);*/
+ }
+ .find-us-bar ul {
+  	margin: 0;
+ 	padding: 0 2rem 0 0;
+ }
+
+.find-us-bar ul li {
+	display: inline;
+   padding: 0 1rem;
+   list-style: none;
+  }
+
+.find-us-bar ul li a {
+    color: white;
+    font-size: 2.25rem;
+   
+}
+
+.find-us-bar a:hover {
+    color: #bfbfbf;
+}
+
+@media only screen and (min-width: 479px){
+	.find-us-bar ul li {
+		 float: left;
+	}
+}
+
+@media only screen and (max-width: 479px) {
+	.find-us-bar ul li a {
+    font-size: 1.75rem;
+   }
+}
+
+
+
+/* horizontal navigation
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.main-nav {
+	margin: 0 0;
+	padding: 0 0 0 0;
+	 border-top:  1px dashed #ccc;
+	  box-shadow: 0 -4px  9px rgba(0, 0, 0, 0.4);
+}
+
+.main-nav:after {
+	content: ".";
+	display: block;
+	line-height: 1px;
+	font-size: 1px;
+	clear: both;
+	/* border-top:  1px dashed #ccc;
+	  box-shadow: 0 4px  9px rgba(0, 0, 0, 0.9)};*/
+}
+ul.nav-horiz-a, ul.nav-horiz-b {
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+	width: 100%;
+	font-size: 1em;
+}
+ul.nav-horiz-a li, ul.nav-horiz-b li {
+	display: block;
+	float: left;
+	width: 12.5%;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+ul.nav-horiz-a li.nav-six, ul.nav-horiz-b li.nav-six {
+	display: block;
+	float: left;
+	width: 16.6666%;
+   margin: 0;
+	padding: 0;
+	text-align: center;
+}
+ul.nav-horiz-a li a, ul.nav-horiz-b li a {
+	display: block;
+	width: 100%;
+	padding: 0.5em;
+	height: 3rem;
+	line-height: 3rem;
+	font-weight: bold;
+	text-decoration: none;
+	color: #fff;
+
+}
+.main-nav>ul.nav-horiz-a li a, .main-nav>ul.nav-horiz-b li a {
+	width: auto;
+}
+ul.nav-horiz-a li#active a, ul.nav-horiz-b li#active a {
+	
+	color: #800000;
+}
+ul.nav-horiz-a li a:hover, ul.nav-horiz-a li#active a:hover, ul.nav-horiz-b li a:hover, ul.nav-horiz-b li#active a:hover {
+	color: #ccc;
+
+	}
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+
+	ul.nav-horiz-a li, ul.nav-horiz-b li {font-size: 0.8em; }
+	.logo {display: none;}
+	}
+
+	@media only screen and (max-width: 767px) {
+	
+		ul.nav-horiz-a li, ul.nav-horiz-b li { width: 25%;}
+	
+   
+	}
+	/* breadcrumbs
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+ul.breadcrumb {
+    padding: 0;
+     margin: .25rem 2rem;
+    list-style: none;
+    font-size: 1.6rem;
+}
+ul.breadcrumb li {display: inline;}
+ul.breadcrumb li+li:before {
+    padding: .8rem;
+    color: black;
+    content: ">\00a0";
+}
+/*
+ul.breadcrumb li a {
+	 color: #1a8cff;
+    text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+    color: #ccc;
+    text-decoration: underline;
+}*/
+
+/* sliding  vertical navigation
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+
+#slidingSideNav.overlay {
+    height: 100%;
+    width: 0%;
+}
+
+#slidingSideNav:target {width:40%;}
+
+.overlay { 
+  background-color: tomato;
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    left: 0;
+    background-color: #262626; /* rgb(0,0,0);*/
+   /* background-color: rgba(0,0,0, 0.9);*/
+    overflow-y: hidden;
+    transition: 0.5s;}
+
+.side-overlay-content {
+	 position: relative;
+  /* top: 5%;*/
+    width: 100%;
+    margin-top: 10%;
+    /* margin-top: 10%; when I change this from margin to padding, it works, but I can't click the close button*/ 
+  /*  padding-top: 10%;*/
+}
+
+.top-overlay-content  {
+    text-align: center; 
+}
+
+.side-overlay-content  {
+    text-align: left;
+   }
+
+.overlay a {
+    padding: 1rem 3rem;
+    text-decoration: none;
+    font-size: 24px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+
+.sideClosebtn {
+    position: absolute;
+    top: 1%;
+    right: 3%;
+    font-size: 6rem;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {
+   overflow-y: auto;}
+  .overlay a {font-size: 2rem;}
+ }
+@media only screen and (max-width: 479px) {
+	#slidingSideNav:target {width:100%;}
+
+	.sideClosebtn {
+    right: 2%;
+}
+}
+ /* # boxes
+    ================================================== */
+    
+    .section-icon {float: left; width: 25%; margin-bottom: 15px;}
+.box h5 {font-size: 24px; float: right;}
+.box {border: 3px solid #414a49; padding: 15px;   font-family: 'Nunito', sans-serif;
+font-size: 16px;}
+.box ul {margin: 0;
+ 	padding: 0 ;}
+.box ul li {	display: inline;
+   padding: 0 1rem;
+   list-style: none; 
+   }
+
+/* #Footer
+================================================== */
+footer {
+	padding: 1rem 0;
+
+	
+}
+footer, footer a {font-size: 1rem; color: white;}
+footer a:hover { color:#BBBBBB;  }
+.copyright, .copyright a { font-size: .9rem;}
+#it {width: 75%; padding: 1.25rem;
+margin: 1rem;
+margin-left: auto;
+	margin-right: auto;}
+
+
+
+
+/* Misc
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+hr {
+  margin-top: .5rem;
+  margin-bottom: 1rem;
+  border-width: 0;
+  border-top: 1px dashed #ccc; }
+
+
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*
+Note: The best way to structure the use of media queries is to create the queries
+near the relevant code. For example, if you wanted to change the styles for buttons
+on small devices, paste the mobile query code up in the buttons section and style it
+there.
+*/
+
+	
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {}
+
+@media screen and (max-height: 450px) {}
+
+/* Larger than mobile */
+@media (min-width: 400px) {}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {}
+
+/* Larger than tablet */
+@media (min-width: 750px) {}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}
