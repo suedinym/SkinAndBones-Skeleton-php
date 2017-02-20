@@ -1,32 +1,24 @@
-	<nav>
-			<div class="main-nav">
+		<div class="main-nav">
 				<ul class="nav-horiz-a">
-					<li id="active">
-						<a href="index.php">Home</a>
+					<li id="active" class="nav-six">
+						<a href="skel-index.php">Home</a>
 					</li>
-					<li>
+					<li class="nav-six">
 						<a href="#">Item</a>
 					</li>
-					<li>
-						<a href="#">Item</a>
-					</li>
-					<li>
+					<li class="nav-six">
 						<a href="#">Item</a>
 					</li>
 				</ul>
 				<ul class="nav-horiz-b">
-						<li>
+						<li class="nav-six">
 						<a href="#">Item</a>
 					</li>
-					<li>
-						<a href="#">Item</a>
-					</li>
-					<li>
+					<li class="nav-six">
 					<a href="#">Item</a>
 					</li>
-					<li>
+					<li class="nav-six">
 						<a href="#">Item</a>
 					</li>
 				</ul>
 			</div>
-		</nav>

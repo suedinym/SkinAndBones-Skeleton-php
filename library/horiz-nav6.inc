@@ -1,7 +1,7 @@
 		<div class="main-nav">
 				<ul class="nav-horiz-a">
 					<li id="active" class="nav-six">
-						<a href="../skel-index.html">Home</a>
+						<a href="index.php">Home</a>
 					</li>
 					<li class="nav-six">
 						<a href="#">Item</a>

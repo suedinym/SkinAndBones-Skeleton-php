@@ -4,7 +4,7 @@
 <title>SkinAndBones | Skeleton</title> 
 <?php require 'library/basic-csslinks-etc.inc' ?> 
 <!-- don't comment out above here -->
-<?php require 'library/top-bar-static.inc' ?> 
+<?php //require 'library/top-bar-static.inc' ?> 
 <?php require 'library/top-bar.inc' ?>
 
 

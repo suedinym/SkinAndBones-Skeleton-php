@@ -3,11 +3,11 @@
 <ul class="top-bar">
   
    <li><a href="index.php"><img class="home" src="images/icons/home.svg" alt="Home"></a></li>
-  <li><a href="gallery1.html">Gallery 1</a></li>
-  <li><a href="gallery2.html">Gallery 2</a></li> 
-  <li><a href="gallery3.html">Gallery 3</a></li>
-  <li><a href="gallery4.html">Gallery 4</a></li>
-  <li><a href="pages/faq.html">FAQ page</a></li>
+  <li><a href="pages/pages/gallery1.php">pages/gallery 1</a></li>
+  <li><a href="pages/gallery2.php">pages/gallery 2</a></li> 
+  <li><a href="pages/gallery3.php">pages/gallery 3</a></li>
+  <li><a href="pages/gallery4.php">pages/gallery 4</a></li>
+  <li><a href="pages/faq.php">FAQ page</a></li>
 </ul>
 </div>
 </header>
