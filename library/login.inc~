@@ -1,7 +1,7 @@
 	<!-- login Modal starts here    ================================================== -->
 <div class="modalDialog" id="openLoginModal">
 	<div class="login-container">
-		<div class="img-container"><img alt="Avatar" class="login-avatar" src="<?php print $path_to_root; ?>images/skull-av.png"></div>
+		<div class="img-container"><img alt="Avatar" class="login-avatar" src="images/skull-av.png"></div>
 		<div class="login-info">
 			<form action="">
 				<label><b>Username</b></label> <input name="uname" placeholder="Enter Username" required="" type="text">

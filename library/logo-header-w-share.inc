@@ -1,0 +1,11 @@
+	<div class="logo-header">
+		<img class="logo" src="images/logo5.png">
+		<h1>Skin and Bones Skeleton</h1>
+		<h5>Based on <a href="http://getskeleton.com">Skeleton - Version 2.0.4</a></h5>
+	</div>
+	<div class="share-bar">
+		<a href="https://www.facebook.com" target="blank"><i class="fa fa-facebook-square"></i></a> <a href=
+		"https://www.pinterest.com/" target="blank"><i class="fa fa-pinterest-square"></i></a> <a href=
+		"https://www.instagram.com/" target="blank"><i class="fa fa-instagram"></i></a> <a href="https://twitter.com/"
+		target="blank"><i class="fa fa-twitter-square"></i></a> 
+	</div><br class="clear"> 

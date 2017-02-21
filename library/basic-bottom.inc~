@@ -2,12 +2,12 @@
 ================================================== -->
 <!-- 	<script src="js/site.js">
 	</script>  -->
-	<script src="<?php print $path_to_root; ?>js/accordion.js">
+	<script src="js/accordion.js">
 	</script> 
-	<script src="<?php print $path_to_root; ?>js/hammer.min.js">
+	<script src="js/hammer.min.js">
 	</script><!-- for swipe support on touch interfaces -->
 	 
-	<script src="<?php print $path_to_root; ?>js/better-simple-slideshow.min.js">
+	<script src="js/better-simple-slideshow.min.js">
 	</script> 
 	<script>
 	   var opts = {

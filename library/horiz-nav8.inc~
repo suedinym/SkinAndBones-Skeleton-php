@@ -2,7 +2,7 @@
 			<div class="main-nav">
 				<ul class="nav-horiz-a">
 					<li id="active">
-						<a href="../skel-index.html">Home</a>
+						<a href="index.php">Home</a>
 					</li>
 					<li>
 						<a href="#">Item</a>

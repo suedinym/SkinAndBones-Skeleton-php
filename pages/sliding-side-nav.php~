@@ -1,25 +1,31 @@
 <?php $path_to_root = '../'?>
-<?php require $path_to_root . 'library/basic-top.inc' ?> 
-  <title>8 Tab Navigation</title>
+<?php require $path_to_root . 'library/basic-top.inc' ?>> 
+<title>Side Nav | Skeleton</title> 
 <?php require $path_to_root . 'library/basic-csslinks-etc.inc' ?> 
-<!-- don't comment out above here -->
+<?php require $path_to_root . 'library/top-bar-static-sideNav.inc' ?>
+ <!-- sliding side navigation
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- The overlay -->
+<div id="slidingSideNav" class="overlay">
+<!--   <a href="javascript:void(0)" class="sideClosebtn" onclick="closeSideNav()">&times;</a> -->
+ <a class="sideClosebtn" href="#">&times;</a>
+  <div class="side-overlay-content">
+   <?php require $path_to_root . '/library/overlay-content.inc'   ?>
+  </div>
+</div>
+  
 
-<?php require $path_to_root . 'library/top-bar.inc' ?>
-
- <?php  require $path_to_root . 'library/logo-header.inc'  ?> 
-		<!-- Horizontal Navigation
-    ================================================== -->
-		<nav>
-<?php	require $path_to_root . 'library/horiz-nav8.inc'	?>
-		</nav>
-	
+<header>
+<header>
+<?php  require $path_to_root . 'library/logo-header.inc'  ?> 
+<hr>
 <!-- Breadcrumbs
     ================================================== -->
     <ul class="breadcrumb">
   <li><a href="../skel-index.html">Home</a></li>
-  <li>Eight Tab Horizontal Navigation</li>
+  <li>Sliding Top Nav</li>
  </ul>
- <div class="container">
+<div class="container">
  <div class="main">
   		<!-- A Better Simple Slideshow Used here
     ================================================== -->

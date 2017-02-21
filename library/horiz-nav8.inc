@@ -2,7 +2,7 @@
 			<div class="main-nav">
 				<ul class="nav-horiz-a">
 					<li id="active">
-						<a href="index.php">Home</a>
+						<a href="<?php print $path_to_root; ?>index.php">Home</a>
 					</li>
 					<li>
 						<a href="#">Item</a>

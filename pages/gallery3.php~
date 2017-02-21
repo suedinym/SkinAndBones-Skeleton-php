@@ -10,7 +10,8 @@
 			<!-- columns should be the immediate child of a .row -->
 			<div class="row">
 			
-<?php require $path_to_root . 'library/gal3-modal.inc' ?>
+	<?php
+	?>
 				
 				<div class="one-third column view-detail"><!-- Modal starts here
     ================================================== -->

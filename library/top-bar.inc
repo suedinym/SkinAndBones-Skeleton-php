@@ -2,13 +2,13 @@
 <div class="top-header-bar dkgry">
 <ul class="top-bar">
   
-   <li><a href="index.php"><img class="home" src="images/icons/home.svg" alt="Home"></a></li>
-  <li><a href="pages/pages/gallery1.php">pages/gallery 1</a></li>
-  <li><a href="pages/gallery2.php">pages/gallery 2</a></li> 
-  <li><a href="pages/gallery3.php">pages/gallery 3</a></li>
-  <li><a href="pages/gallery4.php">pages/gallery 4</a></li>
-  <li><a href="pages/faq.php">FAQ page</a></li>
+   <li><a href="<?php print $path_to_root; ?>index.php"><img class="home" src="<?php print $path_to_root; ?>images/icons/home.svg" alt="Home"></a></li>
+  <li><a href="<?php print $path_to_root; ?>pages/gallery1.php">gallery 1</a></li>
+  <li><a href="<?php print $path_to_root; ?>pages/gallery2.php">gallery 2</a></li> 
+  <li><a href="<?php print $path_to_root; ?>pages/gallery3.php">gallery 3</a></li>
+  <li><a href="<?php print $path_to_root; ?>pages/gallery4.php">gallery 4</a></li>
+  <li><a href="<?php print $path_to_root; ?>pages/faq.php">FAQ page</a></li>
 </ul>
 </div>
 </header>
-<br class="clear">
+<!-- <br class="clear"> -->

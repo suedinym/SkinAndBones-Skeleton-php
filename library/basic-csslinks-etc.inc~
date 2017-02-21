@@ -7,8 +7,8 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/skeleton.css" rel="stylesheet">
-	<link href="css/base.css" rel="stylesheet">
-	<link href="css/base.css" rel="stylesheet">
+	<link href="<?php print $path_to_root; ?>css/base.css" rel="stylesheet">
+	<link href="css/faq-style.css" rel="stylesheet">
 	<link href="css/multiple-modal.css" rel="stylesheet">
 	<link href="css/simple-slideshow-styles.css" rel="stylesheet">
 	<link href="css/accordion.css" rel="stylesheet"><!--  Font Awesome by Dave Gandy - http://fontawesome.io -->

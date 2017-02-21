@@ -1,16 +1,15 @@
 	<!-- Header - fixed top menu
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<header>
-		<div>
+		<div class="static">
 			<ul class="top-bar">
 			<li class="right">
 		 	<a href="#openLoginModal"><img class="bones" src="<?php print $path_to_root; ?>images/icons/bones.png" alt=""></a> 
 				<!--	<a href="#openLoginModal"><i class="fa fa-user"></i></a> -->
 				</li>
 				<li>
-				<!-- <span class="hamburger" onclick="openTopNav()">&#9776;</span>-->
-				 
-				 <!--   <a class="hamburger" href="#slidingTopNav">&#9776;</a> -->
+				<!-- <span class="hamburger" onclick="openSideNav()">&#9776;</span>-->
+				 <a  class="hamburger" href="#slidingSideNav">&#9776;</a>  
 				<li> 
 					<a href="<?php print $path_to_root; ?>index.php"><img alt="Home" class="home" src="<?php print $path_to_root; ?>images/icons/home.svg"></a>
 				</li>

@@ -1,7 +1,7 @@
 		<div class="main-nav">
 				<ul class="nav-horiz-a">
 					<li id="active" class="nav-six">
-						<a href="index.php">Home</a>
+						<a href="<?php print $path_to_root; ?>index.php">Home</a>
 					</li>
 					<li class="nav-six">
 						<a href="#">Item</a>

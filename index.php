@@ -1,7 +1,8 @@
+
 <?php require 'library/basic-top.inc' ?> 
 <title>SkinAndBones | Skeleton</title> 
 <?php require 'library/basic-csslinks-etc.inc' ?> 
-<?php require 'library/top-bar-static.inc' ?>
+<?php require 'library/top-bar-static-sideNav.inc' ?>
 	
 	<!-- sliding side navigation
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

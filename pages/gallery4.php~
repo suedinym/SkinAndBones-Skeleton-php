@@ -1,6 +1,6 @@
 <?php $path_to_root = '../'?>
 <?php require $path_to_root . 'library/basic-top.inc' ?> 
-<title>4 Image Gallery | Skeleton</title> 
+<title>6 Tab Navigation | Skeleton</title> 
 <?php require $path_to_root . 'library/basic-csslinks-etc.inc' ?> 
 <!-- don't comment out above here -->
 
