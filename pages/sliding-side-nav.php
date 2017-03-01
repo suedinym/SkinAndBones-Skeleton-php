@@ -1,8 +1,10 @@
-<?php $path_to_root = '../'?>
-<?php require $path_to_root . 'library/basic-top.inc' ?>> 
+<?php $path_to_root = '../';
+ require $path_to_root . 'library/basic-top.inc'; ?>
 <title>Side Nav | Skeleton</title> 
-<?php require $path_to_root . 'library/basic-csslinks-etc.inc' ?> 
-<?php require $path_to_root . 'library/top-bar-static-sideNav.inc' ?>
+<?php require $path_to_root . 'library/basic-csslinks-etc.inc';
+require $path_to_root . 'library/basic-jq-links.inc';
+require $path_to_root . 'library/basic-jslinks-etc.inc';
+require $path_to_root . 'library/top-bar-static-sideNav.inc'; ?>
  <!-- sliding side navigation
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <!-- The overlay -->
@@ -10,12 +12,12 @@
 <!--   <a href="javascript:void(0)" class="sideClosebtn" onclick="closeSideNav()">&times;</a> -->
  <a class="sideClosebtn" href="#">&times;</a>
   <div class="side-overlay-content">
-   <?php require $path_to_root . '/library/overlay-content.inc'   ?>
+   <?php require $path_to_root . '/library/overlay-content.inc'  ; ?>
   </div>
 </div>
   
 <header>
-<?php  require $path_to_root . 'library/logo-header.inc'  ?> 
+<?php  require $path_to_root . 'library/logo-header.inc' ; ?> 
 <hr>
 <!-- Breadcrumbs
     ================================================== -->
@@ -43,7 +45,6 @@
     </div>
   </div>
    <!-- end container --> 
- <?php require $path_to_root . 'library/footer.inc' ?> 
-<?php require $path_to_root . 'library/login.inc' ?> 
-<!-- don't comment out below here -->
-<?php require $path_to_root . 'library/basic-bottom.inc' ?>
+ <?php require $path_to_root . 'library/footer.inc'; 
+ require $path_to_root . 'library/login.inc';
+require $path_to_root . 'library/basic-bottom.inc'; ?>

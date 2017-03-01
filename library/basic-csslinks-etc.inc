@@ -12,13 +12,6 @@
 	<link href="<?php print $path_to_root; ?>css/multiple-modal.css" rel="stylesheet">
 	<link href="<?php print $path_to_root; ?>css/simple-slideshow-styles.css" rel="stylesheet">
 	<link href="<?php print $path_to_root; ?>css/accordion.css" rel="stylesheet"><!--  Font Awesome by Dave Gandy - http://fontawesome.io -->
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"><!-- JavaScript
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	<!-- Required for Accordion -->
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
-	</script><!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	<link href="images/favicon.png" rel="icon" type="image/png">
-</head>
-<body>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	
+	

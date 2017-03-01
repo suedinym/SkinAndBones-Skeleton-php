@@ -53,6 +53,44 @@ require $path_to_root . 'library/top-bar-static-sideNav.inc' ;?>
     </div>
   </div>
   <!-- end container -->
- <?php require $path_to_root . 'library/footer.inc'; 
- require $path_to_root . 'library/login.inc';
-require $path_to_root . 'library/basic-bottom.inc'; ?>
+  <hr>
+	<!-- Footer Container
+    ================================================== -->
+	<footer>
+		<div class="footer-container centertxt">
+			<p><!-- Unless otherwise noted, all photography and artwork on this website is copyrighted and is not to be used without the permission of the copyright holder.<br> -->
+			&copy; Copyright Holder 2017 <a href="http://getskeleton.com">www.getskeleton.com</a><br>
+			All Rights Reserved</p>
+		</div>
+	</footer><!-- end footer container -->
+  
+  
+
+	<!-- Slideshow js
+================================================== -->
+<!-- <script src="../js/site.js"></script> -->
+<script src="../js/accordion.js"></script>
+	<script src="../js/hammer.min.js">	</script><!-- for swipe support on touch interfaces -->
+	<script src="../js/better-simple-slideshow.min.js">	</script> 
+	<script>
+	var opts = {
+	   auto : {
+	       speed : 3500, 
+	       pauseOnHover : true
+	   },
+	   fullScreen : false, 
+	   swipe : true
+	};
+	makeBSS('.num1', opts);
+
+	var opts2 = {
+	   auto : false,
+	   fullScreen : true,
+	   swipe : true
+	};
+	makeBSS('.num2', opts2);
+	</script>
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

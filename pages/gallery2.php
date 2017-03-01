@@ -1,16 +1,18 @@
-<?php $path_to_root = '../'?>
-<?php require $path_to_root . 'library/basic-top.inc' ?> 
+<?php $path_to_root = '../';
+require $path_to_root . 'library/basic-top.inc' ?> 
 <title>2 Image Gallery | Skeleton</title> 
-<?php require $path_to_root . 'library/basic-csslinks-etc.inc' ?> 
+<?php require $path_to_root . 'library/basic-csslinks-etc.inc';
+require $path_to_root . 'library/basic-jq-links.inc';
+require $path_to_root . 'library/basic-jslinks-etc.inc'; ?> 
 <!-- don't comment out above here -->
 
-<?php require $path_to_root . 'library/top-bar.inc' ?>
+<?php require $path_to_root . 'library/top-bar.inc'; ?>
 		<hr>
 		<div class="container">
 			<!-- columns should be the immediate child of a .row -->
 			<div class="row">
 			
-<?php require $path_to_root . 'library/gal2-modal.inc'?>
+<?php require $path_to_root . 'library/gal2-modal.inc';?>
 				
 				
 				<div class="one-half column view-detail"><!-- Modals start here
@@ -26,7 +28,5 @@
 			</div><!-- end row one -->
 		</div> 
 		<!-- end container --> 
- <?php require $path_to_root . 'library/footer.inc' ?> 
-<?php require $path_to_root . 'library/login.inc' ?> 
-<!-- don't comment out below here -->
-<?php require $path_to_root . 'library/basic-bottom.inc' ?>
+  <?php require $path_to_root . 'library/footer.inc'; 
+require $path_to_root . 'library/basic-bottom.inc';?>

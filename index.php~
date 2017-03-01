@@ -1,8 +1,8 @@
 
-<?php require 'library/basic-top.inc' ?> 
+<?php require 'library/basic-top.inc' ;?> 
 <title>SkinAndBones | Skeleton</title> 
-<?php require 'library/basic-csslinks-etc.inc' ?> 
-<?php require 'library/top-bar-static.inc' ?>
+<?php require 'library/basic-csslinks-etc.inc' ; 
+ require 'library/top-bar-static-sideNav.inc' ;?>
 	
 	<!-- sliding side navigation
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -12,12 +12,12 @@
 	<!-- 	<a class="sideClosebtn" href="javascript:void(0)" onclick="closeSideNav()">&times;</a> -->   <a class="sideClosebtn" href="#">&times;</a>
 		<div class="side-overlay-content">
 		
-<?php  require 'library/credits-accordion.inc'  ?>  
-</div>  </div>  <?php  require 'library/logo-header.inc'  ?>  
+<?php  require 'library/credits-accordion.inc'  ;?>  
+</div>  </div>  <?php  require 'library/logo-header.inc'  ;?>  
 <!-- Horizontal Navigation  ================================================== -->  
 <nav>  
-<?php  require 'library/horiz-nav-landing.inc'  ?> 
- <?php  require 'library/horiz-icons.inc'  ?>
+<?php  require 'library/horiz-nav-landing.inc'; 
+   require 'library/horiz-icons.inc'  ;?>
 </nav>
 
 	<hr>
@@ -34,7 +34,7 @@
 			<div class="one-third column">
 			<p>The basic Skeleton boilerplate is lightweight and simple. Skin And Bones Skeleton, not so much.</p>
 		
-<?php require 'library/slideshow.inc'	?>
+<?php require 'library/slideshow.inc'	;?>
 					<p>For links to more information on various added features, open the side navigation using the hamburger icon.</p>
 			</div><!-- slideshow  end-->
 				<div class="one-third column">
@@ -54,6 +54,6 @@
 			</div>
 		</div>
 	</div><!-- end container -->
-<?php require 'library/footer.inc' ?> 
-<?php require 'library/login.inc' ?> 
-<?php require 'library/basic-bottom.inc' ?>
+<?php require 'library/footer.inc' ;
+ require 'library/login.inc' ; 
+require 'library/basic-bottom.inc' ;?>

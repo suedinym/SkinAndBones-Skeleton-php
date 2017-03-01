@@ -1,30 +1,9 @@
-<?php $path_to_root = '../'?>
-<?php require $path_to_root . 'library/basic-top.inc' ?>
+<?php $path_to_root = '../';
+require $path_to_root . 'library/basic-top.inc' ;?>
   <title>FAQ Page</title>
-  <meta name="description" content="">
-  <meta name="author" content="root" >
+<?php require $path_to_root . 'library/basic-csslinks-etc.inc';
+require $path_to_root . 'library/basic-jq-links.inc';?>
 
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-   <link rel="stylesheet" href="../css/normalize.css">  
-  <link rel="stylesheet" href="../css/skeleton.css">
-    <link rel="stylesheet" href="../css/base.css"> 
-     <link rel="stylesheet" href="../css/accordion.css">
-     <link rel="stylesheet" href="../css/faq-style.css">
-  
-         
- <!-- JavaScript
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <!-- Required for Accordion -->
-   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script>
 	/*For local link TO radio accordion from css overlay -getting the hash doesn't work, because the overlay target is a hash and becomes the default  url*/
 jQuery(document).ready(function() {
@@ -52,25 +31,8 @@ $(this).prop("hash");
 });
 
 </script> 
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="../images/favicon.png">
-
-</head>
-<body>
- <!-- Header - fixed top menu
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<header>
-<div>
-<ul class="top-bar" id="top">
-  <li>	<!-- <span class="hamburger" onclick="openSideNav()">&#9776;</span>   -->
-    <a href="#slidingSideNav">&#9776;</a> 
-  
-  </li>
-   <li><a href="../index.html"><img class="home" src="../images/icons/home.svg" alt="Home"></a></li>
-
-</div>
-</header>
+<?php require $path_to_root . 'library/basic-jslinks-etc.inc'; 
+ require $path_to_root . 'library/top-bar.inc' ;?>
 
  <!-- sliding side navigation
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -272,13 +234,12 @@ $(this).prop("hash");
 		<div class="sixteen columns">
 	<?php
 	 require $path_to_root .'library/faq-accordion.inc'
-	?>
+	;?>
 
 		</div>
 		</div>
     </div>
   </div>
   <!-- end container --> 
- <?php require $path_to_root . 'library/footer.inc' ?> 
-<!-- don't comment out below here -->
-<?php require $path_to_root . 'library/basic-bottom.inc' ?>
+  <?php require $path_to_root . 'library/footer.inc'; 
+require $path_to_root . 'library/basic-bottom.inc';?>

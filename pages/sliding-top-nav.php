@@ -1,22 +1,24 @@
-<?php $path_to_root = '../'?>
-<?php require $path_to_root . 'library/basic-top.inc' ?>> 
+<?php $path_to_root = '../';
+require $path_to_root . 'library/basic-top.inc' ; ?>
 <title>Top Nav | Skeleton</title> 
-<?php require $path_to_root . 'library/basic-csslinks-etc.inc' ?> 
-<?php require $path_to_root . 'library/top-bar-static-topNav.inc' ?>
+<?php require $path_to_root . 'library/basic-csslinks-etc.inc';
+require $path_to_root . 'library/basic-jq-links.inc';
+require $path_to_root . 'library/basic-jslinks-etc.inc';  
+ require $path_to_root . 'library/top-bar-static-topNav.inc' ; ?>
 
  <!-- sliding top navigation
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <div id="slidingTopNav" class="overlay">
   
   <div class="top-overlay-content">
-<?php require $path_to_root . '/library/overlay-content.inc'   ?>
+<?php require $path_to_root . '/library/overlay-content.inc'   ; ?>
   <!--   <a href="javascript:void(0)" class="topClosebtn" onclick="closeTopNav()">&times;</a> -->
     <a class="topClosebtn" href="#">&times;</a>
   
   </div>
 </div>
 <header>
-<?php  require $path_to_root . 'library/logo-header.inc'  ?> 
+<?php  require $path_to_root . 'library/logo-header.inc'  ; ?> 
 <hr>
 <!-- Breadcrumbs
     ================================================== -->
@@ -29,7 +31,7 @@
   		<!-- A Better Simple Slideshow Used here
     ================================================== -->
 		<div class="sixteen columns">
-<?php require $path_to_root . 'library/slideshow.inc'	?>
+<?php require $path_to_root . 'library/slideshow.inc'	; ?>
 		</div>
 		
 		<!-- slideshow  end-->
@@ -44,7 +46,7 @@
     </div>
   </div>
    <!-- end container --> 
- <?php require $path_to_root . 'library/footer.inc' ?> 
-<?php require $path_to_root . 'library/login.inc' ?> 
+ <?php require $path_to_root . 'library/footer.inc' ; 
+ require $path_to_root . 'library/login.inc' ; ?> 
 <!-- don't comment out below here -->
-<?php require $path_to_root . 'library/basic-bottom.inc' ?>
+<?php require $path_to_root . 'library/basic-bottom.inc' ; ?>

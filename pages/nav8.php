@@ -1,16 +1,17 @@
-<?php $path_to_root = '../'?>
-<?php require $path_to_root . 'library/basic-top.inc' ?> 
+<?php $path_to_root = '../';
+require $path_to_root . 'library/basic-top.inc';?> 
   <title>8 Tab Navigation</title>
-<?php require $path_to_root . 'library/basic-csslinks-etc.inc' ?> 
+<?php require $path_to_root . 'library/basic-csslinks-etc.inc';
+require $path_to_root . 'library/basic-jq-links.inc';
+require $path_to_root . 'library/basic-jslinks-etc.inc';?> 
 <!-- don't comment out above here -->
 
-<?php require $path_to_root . 'library/top-bar.inc' ?>
-
- <?php  require $path_to_root . 'library/logo-header.inc'  ?> 
+<?php require $path_to_root . 'library/top-bar.inc';
+ require $path_to_root . 'library/logo-header.inc' ;?> 
 		<!-- Horizontal Navigation
     ================================================== -->
 		<nav>
-<?php	require $path_to_root . 'library/horiz-nav8.inc'	?>
+<?php	require $path_to_root . 'library/horiz-nav8.inc'	;?>
 		</nav>
 	
 <!-- Breadcrumbs
@@ -24,7 +25,7 @@
   		<!-- A Better Simple Slideshow Used here
     ================================================== -->
 		<div class="sixteen columns">
-<?php require $path_to_root . 'library/slideshow.inc'	?>
+<?php require $path_to_root . 'library/slideshow.inc'	;?>
 		</div>
 		
 		<!-- slideshow  end-->
@@ -39,7 +40,5 @@
     </div>
   </div>
    <!-- end container --> 
- <?php require $path_to_root . 'library/footer.inc' ?> 
-<?php require $path_to_root . 'library/login.inc' ?> 
-<!-- don't comment out below here -->
-<?php require $path_to_root . 'library/basic-bottom.inc' ?>
+  <?php require $path_to_root . 'library/footer.inc'; 
+require $path_to_root . 'library/basic-bottom.inc';;?>
