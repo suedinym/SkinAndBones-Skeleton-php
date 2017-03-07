@@ -15,8 +15,8 @@ There are a couple ways to download Skeleton:
 SkinAndBones-Skeleton PHP is a template based on the Skeleton boilerplate. It was developed to flesh out the basic boilerplate with common features of a basic website, such as a slideshow and navigation, turning it into more of a UI framework, for use in quickly comping up a functional website.
 
 CSS and JavaScript for various components are added as seperate files so they can be added or deleted as quickly, as necessary. For instance, 'styles-basic.css' containes the code for links, buttons, forms, lists, code, tables, spacing and utilities. The file is in the project, but not linked to the html, so that those things can be copied and pasted into the 'base.css' as needed. 
-[Download the  SkinAndBones zip](https://github.com/suedinym/SkinAndBones-Skeleton-PHP/archive/master.zip)
-- Clone the repo: `git clone https://github.com/suedinym/SkinAndBones-Skeleton-PHP.git`
+[Download the  SkinAndBones PHP zip](https://github.com/suedinym/SkinAndBones-Skeleton-php/archive/master.zip)
+- Clone the repo: `https://github.com/suedinym/SkinAndBones-Skeleton-php.git`
 
 ### What's in the download?
 
