@@ -41,16 +41,17 @@ Skeleton/
 │   ├── styles-basic.css (holds the basic skeleton styles you may want to add back in.)
 │   └── *skeleton.css
 ├── pages/
-│   ├── gallery1.html
-│   ├── gallery2.html
-│   ├── gallery3.html
-│   ├── gallery4.html
-│   ├── faq.html
-│   ├── nav6.html (Six tab horizontal navigation)
-│   ├── nav8.html (Eight tab horizontal navigation)
-│   ├── sliding-side-nav.html
-│   ├── sliding-side-nav-accordionc.html
-│   └── sliding-top-nav.html
+│   ├── gallery1.php
+│   ├── gallery2.php
+│   ├── gallery3.php
+│   ├── gallery4.php
+│   ├── faq.php
+│   ├── icons.php
+│   ├── nav6.php (Six tab horizontal navigation)
+│   ├── nav8.php (Eight tab horizontal navigation)
+│   ├── sliding-side-nav.php
+│   ├── sliding-side-nav-accordionc.php
+│   └── sliding-top-nav.php
 ├── library/
 │   ├── accordion.inc
 │   ├── basic-bottom.inc
@@ -76,7 +77,7 @@ Skeleton/
 │   ├── slideshow.inc
 │   ├── top-bar.inc
 │   ├── top-bar-static-sideNav.inc
-│   └── top-bar-static-topNav.html
+│   └── top-bar-static-topNav.inc
 ├── fonts/ (just a folder)
 └── images/
     └── favicon.ico, logo.png, logo5.png, arrow_up.png, arrow_down.png
@@ -92,6 +93,10 @@ Skeleton/
 ```
 
 It looks like a lot, but the good news is that you probably won't want or need to change much if anything in the files with an asterisk * next to them.
+
+### What's NOT in the download!
+
+A PHP development environment, such as XAMPP. 
 
 ### Why it's awesome
 
