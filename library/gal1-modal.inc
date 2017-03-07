@@ -3,7 +3,8 @@
     ================================================== -->
 				<h3 class="modal-head centertxt">Skull</h3>
 				<!-- modal one --><a href="#openModal1">
-				<img class="open-modal" src="<?php print $path_to_root; ?>images/icons/enlarge.svg">
+					<i class="open-modal  fa fa-expand  fa-2x"></i>
+			<!-- 	<img class="open-modal" src="<?php print $path_to_root; ?>images/icons/enlarge.svg"> -->
 				</a> <img class="gal1" src="<?php print $path_to_root; ?>images/gallery/image2.png">
 				</div><!-- The Modal -->
 				<!-- note: id is anchor  -->

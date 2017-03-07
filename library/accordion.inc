@@ -16,28 +16,28 @@
 				<div>
 				<ul>
 					<li>
-						<a  href="faq.php#ac-1">FAQ 1</a>
+						<a  href="<?php print $path_to_root; ?>pages/faq.php#ac-1">FAQ 1</a>
 					</li>
 					<li>
-						<a href="faq.php#ac-2">FAQ 2</a>
+						<a href="<?php print $path_to_root; ?>pages/faq.php#ac-2">FAQ 2</a>
 					</li>
 					<li>
-						<a href="faq.php#ac-3">FAQ 3</a>
+						<a href="<?php print $path_to_root; ?>pages/faq.php#ac-3">FAQ 3</a>
 					</li>
 					<li>
-						<a href="faq.php#ac-4">FAQ 4</a>
+						<a href="<?php print $path_to_root; ?>pages/faq.php#ac-4">FAQ 4</a>
 					</li>
 					<li>
-						<a  href="faq.php#ac-5">FAQ 5</a>
+						<a  href="<?php print $path_to_root; ?>pages/faq.php#ac-5">FAQ 5</a>
 					</li>
 					<li>
-						<a  href="faq.php#ac-6">FAQ 6</a>
+						<a  href="<?php print $path_to_root; ?>pages/faq.php#ac-6">FAQ 6</a>
 					</li>
 					<li>
-						<a   href="faq.php#ac-7">FAQ 7</a>
+						<a   href="<?php print $path_to_root; ?>pages/faq.php#ac-7">FAQ 7</a>
 					</li>
 					<li>
-						<a   href="faq.php#ac-8">FAQ 8</a>
+						<a   href="<?php print $path_to_root; ?>pages/faq.php#ac-8">FAQ 8</a>
 					</li>
 				</ul>
 			</div>

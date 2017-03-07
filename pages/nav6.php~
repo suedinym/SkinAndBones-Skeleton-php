@@ -3,12 +3,11 @@
 <title>6 Tab Navigation | Skeleton</title> 
 <?php require $path_to_root . 'library/basic-csslinks-etc.inc';
 require $path_to_root . 'library/basic-jq-links.inc';
-require $path_to_root . 'library/basic-jslinks-etc.inc'; ;?> 
+require $path_to_root . 'library/basic-jslinks-etc.inc';?> 
 <!-- don't comment out above here -->
 
-<?php require $path_to_root . 'library/top-bar.inc' ;?>
-
- <?php  require $path_to_root . 'library/logo-header.inc'  ;?> 
+<?php require $path_to_root . 'library/top-bar.inc' ;
+ require $path_to_root . 'library/logo-header.inc'  ;?> 
 		<!-- Horizontal Navigation
     ================================================== -->
 		<nav>

@@ -154,7 +154,7 @@ list-style-type: none;
     text-decoration: none;
 }
 
-.home {width: 2rem;}
+
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {
 	
@@ -163,9 +163,12 @@ list-style-type: none;
 	}
 	.top-bar li a {
 		 font-size: .75em;
+	
 	}
+
 .top-bar li a, .hamburger {
       padding: .66rem .5rem;
+    
      }  
 }
 .top-header-bar{
@@ -224,49 +227,57 @@ li.right {
 	.logo-header {margin-left: 2rem;}
 	.logo {display: none;}
 }
-    /* #find and share icons
+/* #find and share icons
 ================================================== */
-.find-us-bar {
-	padding: .6rem;
-    width: 100%;
-    text-align: center;
-    background-color:  #414a49;
-    background-image: url(../images/bg/tile-blk.jpg);
-   overflow: auto;
- }
- .find-us-bar ul {
-  	margin: 0;
- 	padding: 0 2rem 0 0;
- }
 
+.find-us-bar, .faq-links {
+	padding: .6rem;
+	width: 100%;
+	text-align: center;
+	background-color: #414a49;
+	background-image: url(../images/bg/tile-blk.jpg);
+	overflow: auto;
+}
+.find-us-bar ul {
+	margin: 0;
+	padding: 0 2rem 0 0;
+}
 .find-us-bar ul li {
 	display: inline;
-   padding: 0 1rem;
-   list-style: none;
-  }
-
+	padding: 0 1rem;
+	list-style: none;
+}
+.faq-links ul li {
+	display: inline;
+	padding: 0 3.5rem;
+	list-style: none;
+}
 .find-us-bar ul li a {
-    color: white;
-    font-size: 2.25rem;
-   
+	color: white;
+	font-size: 2.25rem;
 }
-
+.faq-links ul li a {
+	color: white;
+}
 .find-us-bar a:hover {
-    color: #bfbfbf;
-}
-
-@media only screen and (min-width: 479px){
-	.find-us-bar ul li {
-		 float: right;
-	}
+	color: #bfbfbf;
 }
 
 @media only screen and (max-width: 479px) {
 	.find-us-bar ul li a {
-    font-size: 1.75rem;
-   }
+		font-size: 1.75rem;
+	}
+	.faq-links ul li {
+		padding: 1rem;
+	}
+	ul.faq-a li, ul.faq-b li {
+		width: 25%;
+	}
+	.faq-links ul li a {
+		font-size: 1.25rem;
+	}
 }
-    /* #horizontal share icons
+    /* #vertical share icons
 ================================================== */
 .share-bar {;
 position: absolute;
@@ -285,10 +296,8 @@ top: 8%;
 }
 
 .share-bar a:hover {
-    color: #8aa970;
+    color: #999;
     }
-
-
 
 /* horizontal navigation
 –––––––––––––––––––––––––––––––––––––––––––––––––– */

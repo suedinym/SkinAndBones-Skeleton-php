@@ -3,6 +3,8 @@
 <?php require 'library/basic-top.inc' ?> 
 <title>SkinAndBones | Skeleton</title> 
 <?php require 'library/basic-csslinks-etc.inc' ?> 
+<?php require 'library/basic-jq-links.inc' ?> 
+<?php require 'library/basic-jslinks-etc.inc' ?> 
 <!-- don't comment out above here -->
 <?php// require . 'library/top-bar-static-sideNav.inc' ?>
 <?php //require $path_to_root . 'library/top-bar-static-topNav.inc' ?>
@@ -22,7 +24,7 @@
 <?php // require 'library/credits-accordion.inc'  ?>  
 <?php// require 'library/accordion.inc'	?>
  <?php //require 'library/overlay-content.inc' ?>
- <a class="topClosebtn centertxt" href="#">&times;</a>
+ <!-- <a class="topClosebtn centertxt" href="#">&times;</a> -->
 </div> 
  </div>  
  <?php  //require 'library/logo-header.inc'  ?>  

@@ -18,7 +18,9 @@ require $path_to_root . 'library/basic-jslinks-etc.inc'; ?>
 				<div class="three columns view-detail"><!-- Modal starts here
     ================================================== -->
 				<!-- modal two -->
-				<h3 class="modal-head4 centertxt">Skull</h3><!-- trigger modal --><a href="#openModal2"><img class="open-modal-gal4" src="../images/icons/enlarge.svg"></a> <img class="gal4" src="../images/gallery/image2.png"></div><!-- The Modal -->
+				<h3 class="modal-head4 centertxt">Skull</h3><!-- trigger modal --><a href="#openModal2">
+				<i class="open-modal-gal4  fa fa-expand fa"></i>
+				</a> <img class="gal4" src="../images/gallery/image2.png"></div><!-- The Modal -->
 				<!-- note: id is anchor  -->
 				<div class="modalDialog" id="openModal2">
 					<div><!-- The Close Button -->
@@ -29,7 +31,7 @@ require $path_to_root . 'library/basic-jslinks-etc.inc'; ?>
 				<div class="three columns view-detail"><!-- Modal starts here
     ================================================== -->
 				<!-- modal three -->
-				<h3 class="modal-head4 centertxt">Skull</h3><!-- trigger modal --><a href="#openModal3"><img class="open-modal-gal4" src="../images/icons/enlarge.svg"></a> <img class="gal4" src="../images/gallery/image1.png"></div><!-- The Modal -->
+				<h3 class="modal-head4 centertxt">Skull</h3><!-- trigger modal --><a href="#openModal3"><i class="open-modal-gal4  fa fa-expand fa"></i></a> <img class="gal4" src="../images/gallery/image1.png"></div><!-- The Modal -->
 				<!-- note: id is anchor  -->
 				<div class="modalDialog" id="openModal3">
 					<div><!-- The Close Button -->
@@ -40,7 +42,7 @@ require $path_to_root . 'library/basic-jslinks-etc.inc'; ?>
 				<div class="three columns view-detail"><!-- Modal starts here
     ================================================== -->
 				<!-- modal four -->
-				<h3 class="modal-head4 centertxt">Pelvis</h3><!-- trigger modal --><a href="#openModal4"><img class="open-modal-gal4" src="../images/icons/enlarge.svg"></a> <img class="gal4" src="../images/gallery/image11.png"></div><!-- The Modal -->
+				<h3 class="modal-head4 centertxt">Pelvis</h3><!-- trigger modal --><a href="#openModal4"><i class="open-modal-gal4  fa fa-expand fa"></i></a> <img class="gal4" src="../images/gallery/image11.png"></div><!-- The Modal -->
 				<!-- note: id is anchor  -->
 				<div class="modalDialog" id="openModal4">
 					<div><!-- The Close Button -->
@@ -56,7 +58,7 @@ require $path_to_root . 'library/basic-jslinks-etc.inc'; ?>
 				<div class="three columns view-detail"><!-- Modal 5 starts here
     ================================================== -->
 				<h3 class="modal-head4 centertxt">Hand</h3>
-				<!-- trigger modal --><a href="#openModal5"><img class="open-modal-gal4" src="../images/icons/enlarge.svg"></a> <img class="gal4" src="../images/gallery/image5.png"></div><!-- The Modal -->
+				<!-- trigger modal --><a href="#openModal5"><i class="open-modal-gal4  fa fa-expand fa"></i></a> <img class="gal4" src="../images/gallery/image5.png"></div><!-- The Modal -->
 				<!-- note: id is anchor  -->
 				<div class="modalDialog" id="openModal5">
 					<div><!-- The Close Button -->
@@ -66,7 +68,7 @@ require $path_to_root . 'library/basic-jslinks-etc.inc'; ?>
 				<div class="three columns view-detail"><!-- Modal 6 starts here
     ================================================== -->
 				<!-- modal two -->
-				<h3 class="modal-head4 centertxt">Feet</h3><!-- trigger modal --><a href="#openModal6"><img class="open-modal-gal4" src="../images/icons/enlarge.svg"></a> <img class="gal4" src="../images/gallery/image6.png"></div><!-- The Modal -->
+				<h3 class="modal-head4 centertxt">Feet</h3><!-- trigger modal --><a href="#openModal6"><i class="open-modal-gal4  fa fa-expand fa"></i></a> <img class="gal4" src="../images/gallery/image6.png"></div><!-- The Modal -->
 				<!-- note: id is anchor  -->
 				<div class="modalDialog" id="openModal6">
 					<div><!-- The Close Button -->
@@ -77,7 +79,7 @@ require $path_to_root . 'library/basic-jslinks-etc.inc'; ?>
 				<div class="three columns view-detail"><!-- Modal 7 starts here
     ================================================== -->
 				<!-- modal three -->
-				<h3 class="modal-head4 centertxt">Hand</h3><!-- trigger modal --><a href="#openModal7"><img class="open-modal-gal4" src="../images/icons/enlarge.svg"></a> <img class="gal4" src="../images/gallery/image4.png"></div><!-- The Modal -->
+				<h3 class="modal-head4 centertxt">Hand</h3><!-- trigger modal --><a href="#openModal7"><i class="open-modal-gal4  fa fa-expand fa"></i></a> <img class="gal4" src="../images/gallery/image4.png"></div><!-- The Modal -->
 				<!-- note: id is anchor  -->
 				<div class="modalDialog" id="openModal7">
 					<div><!-- The Close Button -->
@@ -88,7 +90,7 @@ require $path_to_root . 'library/basic-jslinks-etc.inc'; ?>
 				<div class="three columns view-detail"><!-- Modal 8 starts here
     ================================================== -->
 				<!-- modal eight -->
-				<h3 class="modal-head4 centertxt">Hand</h3><!-- trigger modal --><a href="#openModal8"><img class="open-modal-gal4" src="../images/icons/enlarge.svg"></a> <img class="gal4" src="../images/gallery/image10.png"></div><!-- The Modal -->
+				<h3 class="modal-head4 centertxt">Hand</h3><!-- trigger modal --><a href="#openModal8"><i class="open-modal-gal4  fa fa-expand fa"></i></a> <img class="gal4" src="../images/gallery/image10.png"></div><!-- The Modal -->
 				<!-- note: id is anchor  -->
 				<div class="modalDialog" id="openModal8">
 					<div><!-- The Close Button -->
@@ -104,7 +106,7 @@ require $path_to_root . 'library/basic-jslinks-etc.inc'; ?>
 				<div class="three columns view-detail"><!-- Modal 9 starts here
     ================================================== -->
 				<h3 class="modal-head4 centertxt">Anterior</h3>
-				<!-- trigger modal --><a href="#openModal9"><img class="open-modal-gal4" src="../images/icons/enlarge.svg"></a> <img class="gal4" src="../images/gallery/image7.png"></div><!-- The Modal -->
+				<!-- trigger modal --><a href="#openModal9"><i class="open-modal-gal4  fa fa-expand fa"></i></a> <img class="gal4" src="../images/gallery/image7.png"></div><!-- The Modal -->
 				<!-- note: id is anchor  -->
 				<div class="modalDialog" id="openModal9">
 					<div><!-- The Close Button -->
@@ -114,7 +116,7 @@ require $path_to_root . 'library/basic-jslinks-etc.inc'; ?>
 				<div class="three columns view-detail"><!-- Modal 10 starts here
     ================================================== -->
 				<!-- modal two -->
-				<h3 class="modal-head4 centertxt">Posterior</h3><!-- trigger modal --><a href="#openModal10"><img class="open-modal-gal4" src="../images/icons/enlarge.svg"></a> <img class="gal4" src="../images/gallery/image8.png"></div><!-- The Modal -->
+				<h3 class="modal-head4 centertxt">Posterior</h3><!-- trigger modal --><a href="#openModal10"><i class="open-modal-gal4  fa fa-expand fa"></i></a> <img class="gal4" src="../images/gallery/image8.png"></div><!-- The Modal -->
 				<!-- note: id is anchor  -->
 				<div class="modalDialog" id="openModal10">
 					<div><!-- The Close Button -->
@@ -125,7 +127,7 @@ require $path_to_root . 'library/basic-jslinks-etc.inc'; ?>
 				<div class="three columns view-detail"><!-- Modal 11 starts here
     ================================================== -->
 				<!-- modal three -->
-				<h3 class="modal-head4 centertxt">Side</h3><!-- trigger modal --><a href="#openModal11"><img class="open-modal-gal4" src="../images/icons/enlarge.svg"></a> <img class="gal4" src="../images/gallery/image9.png"></div><!-- The Modal -->
+				<h3 class="modal-head4 centertxt">Side</h3><!-- trigger modal --><a href="#openModal11"><i class="open-modal-gal4  fa fa-expand fa"></i></a> <img class="gal4" src="../images/gallery/image9.png"></div><!-- The Modal -->
 				<!-- note: id is anchor  -->
 				<div class="modalDialog" id="openModal11">
 					<div><!-- The Close Button -->
@@ -136,7 +138,7 @@ require $path_to_root . 'library/basic-jslinks-etc.inc'; ?>
 				<div class="three columns view-detail"><!-- Modal  12 starts here
     ================================================== -->
 				<!-- modal four -->
-				<h3 class="modal-head4 centertxt">Pelvis</h3><!-- trigger modal --><a href="#openModal12"><img class="open-modal-gal4" src="../images/icons/enlarge.svg"></a> <img class="gal4" src="../images/gallery/image12.png"></div><!-- The Modal -->
+				<h3 class="modal-head4 centertxt">Pelvis</h3><!-- trigger modal --><a href="#openModal12"><i class="open-modal-gal4  fa fa-expand fa"></i></a> <img class="gal4" src="../images/gallery/image12.png"></div><!-- The Modal -->
 				<!-- note: id is anchor  -->
 				<div class="modalDialog" id="openModal12">
 					<div><!-- The Close Button -->

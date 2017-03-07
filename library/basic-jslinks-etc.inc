@@ -1,5 +1,5 @@
 <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	<link href="images/favicon.png" rel="icon" type="image/png">
+	<link href="<?php print $path_to_root; ?>images/favicon.png" rel="icon" type="image/png">
 </head>
 <body>

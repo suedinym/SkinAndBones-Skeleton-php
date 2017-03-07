@@ -34,24 +34,22 @@ $(this).prop("hash");
 <?php require $path_to_root . 'library/basic-jslinks-etc.inc'; 
  require $path_to_root . 'library/top-bar.inc' ;?>
 
- <!-- sliding side navigation
+
+  
+
+<header>
+<div class="logo-header" >
+
+			<img class="logo" src="../images/logo.png">
+			<h1 >Skin and Bones Skeleton</h1>
+					<h5>Based on <a href="http://getskeleton.com"> Skeleton - Version 2.0.4</a></h5>
+			</header>
+		</div><br class="clear">
+		 <!-- Faq same page links
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <!-- The overlay -->
- <!-- Overlay content -->
-<div id="slidingSideNav" class="overlay">
-<!--    <a href="javascript:void(0)" class="sideClosebtn" <!-- onclick="closeSideNav() 
-  ">&times;</a>   -->
-   <a class="sideClosebtn" href="#top">&times;</a> 
-  <div class="side-overlay-content">
-  <!-- ACCORDION
-    ================================================== -->
-	<h1 id="accordion">Accordion Side Nav</h1>
-	<aside class="accordion">
-		<h1>Category A</h1>
-		<div>
-			<h2>Sub Category</h2>
-			<div>
-				<ul>
+  	<div  class="faq-links">
+  
+				<ul class="faq-a">
 					<li>
 						<a class="open-local-faq" href="#ac-1">FAQ 1</a>
 					</li>
@@ -64,6 +62,8 @@ $(this).prop("hash");
 					<li>
 						<a class="open-local-faq"  href="#ac-4">FAQ 4</a>
 					</li>
+					</ul>
+					<ul class="faq-b">
 						<li>
 						<a class="open-local-faq" href="#ac-5">FAQ 5</a>
 					</li>
@@ -78,156 +78,14 @@ $(this).prop("hash");
 					</li>
 				</ul>
 			</div>
-			<h2>Sub Category</h2>
-			<div>
-				<ul>
-					<li>
-						<a href="#">A Link</a>
-					</li>
-					<li>
-						<a href="#">Another Link</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<h1>Category B</h1>
-		<div>
-			<h2>Sub Category</h2>
-			<div>
-				<h3>Another Sub Category</h3>
-				<div>
-					<ul>
-						<li>
-							<a href="#">A Link</a>
-						</li>
-						<li>
-							<a href="#">Another Link</a>
-						</li>
-					</ul>
-				</div>
-				<h3>Another Sub Category</h3>
-				<div>
-					<ul>
-						<li>
-							<a href="#">A Link</a>
-						</li>
-						<li>
-							<a href="#">Another Link</a>
-						</li>
-					</ul>
-				</div>
-				<h3>Another Sub Category</h3>
-				<div>
-					<ul>
-						<li>
-							<a href="#">A Link</a>
-						</li>
-						<li>
-							<a href="#">Yet Another Link</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<h2>Sub Category</h2>
-			<div>
-				<h3>Another Sub Category</h3>
-				<div>
-					<ul>
-						<li>
-							<a href="#">A Link</a>
-						</li>
-						<li>
-							<a href="#">Another Link</a>
-						</li>
-						<li>
-							<a href="#">Yet Another Link</a>
-						</li>
-					</ul>
-				</div>
-				<h3>Another Sub Category</h3>
-				<div>
-					<ul>
-						<li>
-							<a href="#">A Link</a>
-						</li>
-						<li>
-							<a href="#">Another Link</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<h1>Category C</h1>
-		<div>
-			<h2>Sub Category</h2>
-			<div>
-				<ul>
-			<li>
-							<a href="#">A Link</a>
-						</li>
-						<li>
-							<a href="#">Another Link</a>
-						</li>
-				</ul>
-			</div>
-			<h2>Sub Category</h2>
-			<div>
-				<ul>
-				<li>
-							<a href="#">A Link</a>
-						</li>
-						<li>
-							<a href="#">Another Link</a>
-						</li>
-				</ul>
-			</div>
-			<h2>Sub Category</h2>
-			<div>
-				<ul>
-				<li>
-							<a href="#">A Link</a>
-						</li>
-						<li>
-							<a href="#">Another Link</a>
-						</li>
-						<li>
-							<a href="#">Yet Another Link</a>
-						</li>
-				</ul>
-			</div>
-		</div>
-		<h1>Category D</h1>
-		<div>
-			<ul>
-				<li>
-							<a href="#">A Link</a>
-						</li>
-						<li>
-							<a href="#">Another Link</a>
-						</li>
-			</ul>
-		</div>
-		<h1>Category E</h1>
-		<p>'Tis not so deep as a well, nor so wide as a church-door; but 'tis enough,'twill serve: ask for me to-morrow, and you shall find me a grave man. </p>
-	</aside>
-  </div>
-</div>
-  
-
-<header>
-<div class="logo-header" >
-
-			<img class="logo" src="../images/logo.png">
-			<h1 >Skin and Bones Skeleton</h1>
-					<h5>Based on <a href="http://getskeleton.com"> Skeleton - Version 2.0.4</a></h5>
-			</header>
-		</div><br class="clear">
 <hr>
 
 
  
  <div class="container">
  <div class="main">
+ 
+
    <div class="row">		
    <!-- Accordion Faq
     ================================================== -->

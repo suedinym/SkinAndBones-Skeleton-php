@@ -2,6 +2,7 @@
 <?php require 'library/basic-top.inc' ;?> 
 <title>SkinAndBones | Skeleton</title> 
 <?php require 'library/basic-csslinks-etc.inc' ; 
+require 'library/basic-jq-links.inc';
 require 'library/basic-jslinks-etc.inc';
  require 'library/top-bar-static-sideNav.inc' ;?>
 	

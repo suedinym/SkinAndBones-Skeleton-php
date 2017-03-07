@@ -18,7 +18,11 @@ require $path_to_root . 'library/basic-jslinks-etc.inc'; ?>
 				<div class="one-half column view-detail"><!-- Modals start here
     ================================================== -->
 				<!-- modal two -->
-				<h3 class="modal-head centertxt">Skull</h3><!-- modal one --><a href="#openModal2"><img class="open-modal-gal2" src="../images/icons/enlarge.svg"></a> <img class="gal2" src="../images/gallery/image1.png"></div><!-- The Modal -->
+				<h3 class="modal-head centertxt">Skull</h3><!-- modal one -->
+				<a href="#openModal2">
+				<i class="open-modal-gal2  fa fa-expand fa-lg"></i>
+			<!-- 	<img class="open-modal-gal2" src="../images/icons/enlarge.svg"> -->
+				</a> <img class="gal2" src="../images/gallery/image1.png"></div><!-- The Modal -->
 				<!-- note: id is anchor  -->
 				<div class="modalDialog" id="openModal2">
 					<div><!-- The Close Button -->

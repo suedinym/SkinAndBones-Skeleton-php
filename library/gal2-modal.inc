@@ -5,7 +5,9 @@
 				
 				<!-- modal one -->
 				<a href="#openModal1">
-				<img class="open-modal-gal2" src="<?php print $path_to_root; ?>images/icons/enlarge.svg"></a> 
+					<i class="open-modal-gal2  fa fa-expand fa-lg"></i>
+				<!-- <img class="open-modal-gal2" src="<?php print $path_to_root; ?>images/icons/enlarge.svg"> -->
+				</a> 
 				
 				<img class="gal2" src="<?php print $path_to_root; ?>images/gallery/image3.png"></div>
 				

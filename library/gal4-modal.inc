@@ -5,7 +5,9 @@
 				
 				<!-- trigger modal -->
 				<a href="#openModal1">
-				<img class="open-modal-gal4" src="<?php print $path_to_root; ?>images/icons/enlarge.svg"></a> 
+					<i class="open-modal-gal4  fa fa-expand fa"></i>
+		<!-- 		<img class="open-modal-gal4" src="<?php print $path_to_root; ?>images/icons/enlarge.svg"> -->
+				</a> 
 				
 				<img class="gal4" src="<?php print $path_to_root; ?>images/gallery/image3.png"></div>
 				<!-- The Modal -->

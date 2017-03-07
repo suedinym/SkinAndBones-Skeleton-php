@@ -42,4 +42,4 @@ require $path_to_root . 'library/basic-jslinks-etc.inc';?>
   </div>
   <!-- end container --> 
   <?php require $path_to_root . 'library/footer.inc'; 
-require $path_to_root . 'library/basic-bottom.inc';;;?>
+require $path_to_root . 'library/basic-bottom.inc';?>

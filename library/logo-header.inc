@@ -1,5 +1,5 @@
 <div class="logo-header">
-		<img class="logo" src="<?php print $path_to_root; ?>images/logo5.png">
+		<img class="logo" src="<?php print $path_to_root; ?>images/logo.png">
 		<h1>Skin and Bones Skeleton</h1>
 		<h5>Based on <a href="http://getskeleton.com">Skeleton - Version 2.0.4</a></h5>
 	</div><!-- <br class="clear"> -->

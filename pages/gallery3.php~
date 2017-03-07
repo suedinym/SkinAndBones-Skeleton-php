@@ -1,23 +1,25 @@
-<?php $path_to_root = '../'?>
-<?php require $path_to_root . 'library/basic-top.inc' ?> 
+<?php $path_to_root = '../';
+require $path_to_root . 'library/basic-top.inc' ;?> 
 <title>3 Image Gallery | Skeleton</title> 
 <?php require $path_to_root . 'library/basic-csslinks-etc.inc';
 require $path_to_root . 'library/basic-jq-links.inc';
 require $path_to_root . 'library/basic-jslinks-etc.inc'; ?>  
 <!-- don't comment out above here -->
 
-<?php require $path_to_root . 'library/top-bar.inc' ?>
+<?php require $path_to_root . 'library/top-bar.inc'; ?>
 		<hr>
 		<div class="container">
 			<!-- columns should be the immediate child of a .row -->
 			<div class="row">
 			
-<?php require $path_to_root . 'library/gal3-modal.inc' ?>
+<?php require $path_to_root . 'library/gal3-modal.inc'; ?>
 				
 				<div class="one-third column view-detail"><!-- Modal starts here
     ================================================== -->
 				<!-- modal two -->
-				<h3 class="modal-head centertxt">Skull</h3><!-- trigger modal --><a href="#openModal2"><img class="open-modal-gal3" src="../images/icons/enlarge.svg"></a> <img class="gal3" src="../images/gallery/image2.png"></div><!-- The Modal -->
+				<h3 class="modal-head centertxt">Skull</h3><!-- trigger modal --><a href="#openModal2">
+				<img class="open-modal-gal3" src="../images/icons/enlarge.svg">
+				</a> <img class="gal3" src="../images/gallery/image2.png"></div><!-- The Modal -->
 				<!-- note: id is anchor  -->
 				<div class="modalDialog" id="openModal2">
 					<div><!-- The Close Button -->
@@ -74,4 +76,4 @@ require $path_to_root . 'library/basic-jslinks-etc.inc'; ?>
 		</div>
 	 <!-- end container --> 
   <?php require $path_to_root . 'library/footer.inc'; 
-require $path_to_root . 'library/basic-bottom.inc';;?>
+require $path_to_root . 'library/basic-bottom.inc';?>
